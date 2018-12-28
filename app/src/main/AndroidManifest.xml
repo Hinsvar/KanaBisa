@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.calvin.skripsi.kanabisa">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/kanabisa"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/kanabisa"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity
+                android:name=".SplashActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".BerandaActivity">
+        </activity>
+
+        <activity android:name=".PengantarActivity">
+        </activity>
+
+        <activity android:name=".HiraganaActivity">
+        </activity>
+
+        <activity android:name=".KatakanaActivity">
+        </activity>
+
+        <activity android:name=".KarakterActivity">
+        </activity>
+
+        <activity android:name=".KompetensiActivity">
+        </activity>
+
+    </application>
+
+</manifest>

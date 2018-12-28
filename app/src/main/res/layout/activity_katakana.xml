@@ -1,0 +1,2750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <!-- Tabel hiragana -->
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <android.widget.RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:id="@+id/tabel_katakana"
+                         android:layout_marginTop="60dp">
+
+                <!-- a-i-u-e-o -->
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_a"
+                                android:src="@drawable/k_dasar_a"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_a"
+                                android:text="a"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_i"
+                                android:src="@drawable/k_dasar_i"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_i"
+                                android:text="i"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_u"
+                                android:src="@drawable/k_dasar_u"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_u"
+                                android:text="u"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_e"
+                                android:src="@drawable/k_dasar_e"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_e"
+                                android:text="e"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_o"
+                                android:src="@drawable/k_dasar_o"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_o"
+                                android:text="o"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ka-ki-ku-ke-ko -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ka"
+                                android:src="@drawable/k_dasar_ka"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ka"
+                                android:text="ka"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ki"
+                                android:src="@drawable/k_dasar_ki"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ki"
+                                android:text="ki"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ku"
+                                android:src="@drawable/k_dasar_ku"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ku"
+                                android:text="ku"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ke"
+                                android:src="@drawable/k_dasar_ke"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ke"
+                                android:text="ke"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ko"
+                                android:src="@drawable/k_dasar_ko"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ko"
+                                android:text="ko"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- sa-shi-su-se-so -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_sa"
+                                android:src="@drawable/k_dasar_sa"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_sa"
+                                android:text="sa"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_shi"
+                                android:src="@drawable/k_dasar_shi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_shi"
+                                android:text="shi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_su"
+                                android:src="@drawable/k_dasar_su"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_su"
+                                android:text="su"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_se"
+                                android:src="@drawable/k_dasar_se"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_se"
+                                android:text="se"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_so"
+                                android:src="@drawable/k_dasar_so"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_so"
+                                android:text="so"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ta-chi-tsu-te-to -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ta"
+                                android:src="@drawable/k_dasar_ta"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ta"
+                                android:text="ta"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_chi"
+                                android:src="@drawable/k_dasar_chi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_chi"
+                                android:text="chi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_tsu"
+                                android:src="@drawable/k_dasar_tsu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_tsu"
+                                android:text="tsu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_te"
+                                android:src="@drawable/k_dasar_te"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_te"
+                                android:text="te"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_to"
+                                android:src="@drawable/k_dasar_to"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_to"
+                                android:text="to"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- na-ni-nu-ne-no -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_na"
+                                android:src="@drawable/k_dasar_na"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_na"
+                                android:text="na"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ni"
+                                android:src="@drawable/k_dasar_ni"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ni"
+                                android:text="ni"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_nu"
+                                android:src="@drawable/k_dasar_nu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_nu"
+                                android:text="nu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ne"
+                                android:src="@drawable/k_dasar_ne"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ne"
+                                android:text="ne"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_no"
+                                android:src="@drawable/k_dasar_no"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_no"
+                                android:text="no"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ha-hi-fu-he-ho -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ha"
+                                android:src="@drawable/k_dasar_ha"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ha"
+                                android:text="ha"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_hi"
+                                android:src="@drawable/k_dasar_hi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_hi"
+                                android:text="hi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_fu"
+                                android:src="@drawable/k_dasar_fu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_fu"
+                                android:text="fu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_he"
+                                android:src="@drawable/k_dasar_he"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_he"
+                                android:text="he"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ho"
+                                android:src="@drawable/k_dasar_ho"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ho"
+                                android:text="ho"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ma-mi-mu-me-mo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ma"
+                                android:src="@drawable/k_dasar_ma"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ma"
+                                android:text="ma"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_mi"
+                                android:src="@drawable/k_dasar_mi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_mi"
+                                android:text="mi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_mu"
+                                android:src="@drawable/k_dasar_mu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_mu"
+                                android:text="mu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_me"
+                                android:src="@drawable/k_dasar_me"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_me"
+                                android:text="me"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_mo"
+                                android:src="@drawable/k_dasar_mo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_mo"
+                                android:text="mo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ya-yu-yo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ya"
+                                android:src="@drawable/k_dasar_ya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ya"
+                                android:text="ya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_yu"
+                                android:src="@drawable/k_dasar_yu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_yu"
+                                android:text="yu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_yo"
+                                android:src="@drawable/k_dasar_yo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_yo"
+                                android:text="yo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- ra-ri-ru-re-ro -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ra"
+                                android:src="@drawable/k_dasar_ra"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ra"
+                                android:text="ra"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ri"
+                                android:src="@drawable/k_dasar_ri"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ri"
+                                android:text="ri"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ru"
+                                android:src="@drawable/k_dasar_ru"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ru"
+                                android:text="ru"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_re"
+                                android:src="@drawable/k_dasar_re"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_re"
+                                android:text="re"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ro"
+                                android:src="@drawable/k_dasar_ro"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ro"
+                                android:text="ro"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- wa-wo-n -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_wa"
+                                android:src="@drawable/k_dasar_wa"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_wa"
+                                android:text="wa"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_wo"
+                                android:src="@drawable/k_dasar_wo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_wo"
+                                android:text="wo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_n"
+                                android:src="@drawable/k_dasar_n"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_n"
+                                android:text="n"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- ga-gi-gu-ge-go -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ga"
+                                android:src="@drawable/k_dasar_ga"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ga"
+                                android:text="ga"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_gi"
+                                android:src="@drawable/k_dasar_gi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_gi"
+                                android:text="gi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_gu"
+                                android:src="@drawable/k_dasar_gu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_gu"
+                                android:text="gu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ge"
+                                android:src="@drawable/k_dasar_ge"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ge"
+                                android:text="ge"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_go"
+                                android:src="@drawable/k_dasar_go"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_go"
+                                android:text="go"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- za-ji (zi)-zu-ze-zo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_za"
+                                android:src="@drawable/k_dasar_za"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_za"
+                                android:text="za"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ji"
+                                android:src="@drawable/k_dasar_ji"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ji"
+                                android:text="ji (zi)"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_zu"
+                                android:src="@drawable/k_dasar_zu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_zu"
+                                android:text="zu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ze"
+                                android:src="@drawable/k_dasar_ze"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ze"
+                                android:text="ze"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_zo"
+                                android:src="@drawable/k_dasar_zo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_zo"
+                                android:text="zo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- da-ji (di)-zu (du)-de-do -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_da"
+                                android:src="@drawable/k_dasar_da"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_da"
+                                android:text="da"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_di"
+                                android:src="@drawable/k_dasar_di"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_di"
+                                android:text="ji (di)"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_du"
+                                android:src="@drawable/k_dasar_du"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_du"
+                                android:text="zu (du)"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_de"
+                                android:src="@drawable/k_dasar_de"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_de"
+                                android:text="de"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_do"
+                                android:src="@drawable/k_dasar_do"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_do"
+                                android:text="do"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- ba-bi-bu-be-bo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ba"
+                                android:src="@drawable/k_dasar_ba"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ba"
+                                android:text="ba"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_bi"
+                                android:src="@drawable/k_dasar_bi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_bi"
+                                android:text="bi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_bu"
+                                android:src="@drawable/k_dasar_bu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_bu"
+                                android:text="bu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_be"
+                                android:src="@drawable/k_dasar_be"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_be"
+                                android:text="be"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_bo"
+                                android:src="@drawable/k_dasar_bo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_bo"
+                                android:text="bo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- pa-pi-pu-pe-po -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pa"
+                                android:src="@drawable/k_dasar_pa"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pa"
+                                android:text="pa"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pi"
+                                android:src="@drawable/k_dasar_pi"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pi"
+                                android:text="pi"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pu"
+                                android:src="@drawable/k_dasar_pu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pu"
+                                android:text="pu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pe"
+                                android:src="@drawable/k_dasar_pe"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pe"
+                                android:text="pe"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_po"
+                                android:src="@drawable/k_dasar_po"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_po"
+                                android:text="po"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!-- kya-kyu-kyo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_kya"
+                                android:src="@drawable/k_dasar_kya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_kya"
+                                android:text="kya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_kyu"
+                                android:src="@drawable/k_dasar_kyu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_kyu"
+                                android:text="kyu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_kyo"
+                                android:src="@drawable/k_dasar_kyo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_kyo"
+                                android:text="kyo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- sha-shu-sho -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_sha"
+                                android:src="@drawable/k_dasar_sha"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_sha"
+                                android:text="sha"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_shu"
+                                android:src="@drawable/k_dasar_shu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_shu"
+                                android:text="shu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_sho"
+                                android:src="@drawable/k_dasar_sho"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_sho"
+                                android:text="sho"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- cha-chu-cho -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_cha"
+                                android:src="@drawable/k_dasar_cha"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_cha"
+                                android:text="cha"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_chu"
+                                android:src="@drawable/k_dasar_chu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_chu"
+                                android:text="chu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_cho"
+                                android:src="@drawable/k_dasar_cho"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_cho"
+                                android:text="cho"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- nya-nyu-nyo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_nya"
+                                android:src="@drawable/k_dasar_nya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_nya"
+                                android:text="nya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_nyu"
+                                android:src="@drawable/k_dasar_nyu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_nyu"
+                                android:text="nyu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_nyo"
+                                android:src="@drawable/k_dasar_nyo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_nyo"
+                                android:text="nyo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- hya-hyu-hyo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_hya"
+                                android:src="@drawable/k_dasar_hya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_hya"
+                                android:text="hya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_hyu"
+                                android:src="@drawable/k_dasar_hyu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_hyu"
+                                android:text="hyu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_hyo"
+                                android:src="@drawable/k_dasar_hyo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_hyo"
+                                android:text="hyo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- mya-myu-myo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_mya"
+                                android:src="@drawable/k_dasar_mya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_mya"
+                                android:text="mya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_myu"
+                                android:src="@drawable/k_dasar_myu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_myu"
+                                android:text="myu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_myo"
+                                android:src="@drawable/k_dasar_myo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_myo"
+                                android:text="myo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- rya-ryu-ryo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_rya"
+                                android:src="@drawable/k_dasar_rya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_rya"
+                                android:text="rya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ryu"
+                                android:src="@drawable/k_dasar_ryu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ryu"
+                                android:text="ryu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ryo"
+                                android:src="@drawable/k_dasar_ryo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ryo"
+                                android:text="ryo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- gya-gyu-gyo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_gya"
+                                android:src="@drawable/k_dasar_gya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_gya"
+                                android:text="gya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_gyu"
+                                android:src="@drawable/k_dasar_gyu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_gyu"
+                                android:text="gyu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_gyo"
+                                android:src="@drawable/k_dasar_gyo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_gyo"
+                                android:text="gyo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- ja-ju-jo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ja"
+                                android:src="@drawable/k_dasar_ja"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ja"
+                                android:text="ja"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_ju"
+                                android:src="@drawable/k_dasar_ju"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_ju"
+                                android:text="ju"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_jo"
+                                android:src="@drawable/k_dasar_jo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_jo"
+                                android:text="jo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- bya-byu-byo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_bya"
+                                android:src="@drawable/k_dasar_bya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_bya"
+                                android:text="bya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_byu"
+                                android:src="@drawable/k_dasar_byu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_byu"
+                                android:text="byu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_byo"
+                                android:src="@drawable/k_dasar_byo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_byo"
+                                android:text="byo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- pya-pyu-pyo -->
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pya"
+                                android:src="@drawable/k_dasar_pya"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pya"
+                                android:text="pya"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pyu"
+                                android:src="@drawable/k_dasar_pyu"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pyu"
+                                android:text="pyu"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="128dp"
+                            android:layout_weight="0.2">
+
+                        <ImageView
+                                android:layout_weight="0.33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:id="@+id/img_table_k_pyo"
+                                android:src="@drawable/k_dasar_pyo"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_table_k_pyo"
+                                android:text="pyo"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                        />
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+        </android.widget.RelativeLayout>
+
+    </ScrollView>
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    </FrameLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/drawer_view"
+            app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

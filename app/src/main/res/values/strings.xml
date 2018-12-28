@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Kana Bisa</string>
+
+    <!-- splash screen -->
+    <string name="logosplash">Logo splash screen Kana Bisa</string>
+
+    <!-- beranda -->
+    <string name="logoberanda">Logo beranda Kana Bisa</string>
+    <string name="beranda">Selamat datang di Kana Bisa!</string>
+
+    <!-- menu drawer -->
+    <string name="optberanda">Beranda</string>
+    <string name="optpengantar">Pengantar</string>
+    <string name="opthiragana">Tabel hiragana</string>
+    <string name="optkatakana">Tabel katakana</string>
+    <string name="optkompetensi">Kompetensi kana</string>
+    <string name="optevaluasi">Mulai evaluasi</string>
+
+    <!-- pengantar -->
+    <string name="judulpengantar">PENGANTAR KANA BISA</string>
+    <string name="logopengantar">Logo pengantar Kana Bisa</string>
+    <string name="awalpengantar">Selamat datang di halaman pengantar aplikasi Kana Bisa.
+        Halaman ini bertujuan untuk memberikan informasi singkat mengenai sistem aksara kana, yang terdiri dari hiragana dan katakana,
+        serta menunjukkan sebuah panduan singkat dari beberapa fungsionalitas yang terdapat dalam aplikasi Kana Bisa.</string>
+
+    <!-- pengantar hiragana -->
+    <string name="judulhiragana">HIRAGANA</string>
+    <string name="logohiragana">Logo hiragana pengantar Kana Bisa</string>
+    <string name="tekshiragana1">Hiragana adalah kana yang lebih umum dipakai di antara kedua jenis kana. Hiragana memiliki sifat goresan
+        yang lebih terkesan melengkung (cursive) dibandingkan katakana. Hiragana sendiri ditujukan sebagai penyederhanaan dari aksara
+        Mandarin, yang merupakan sumber dari aksara kanji yang kini digunakan dalam bahasa Jepang.</string>
+    <string name="tekshiragana2">Penggunaan hiragana pada penulisan kalimat bahasa Jepang lebih ditujukan sebagai imbuhan untuk kata kerja
+        dalam kanji, yang dapat merubah konotasi kata kerja tersebut, baik  menjadi positif, negatif, atau interogatif, serta menentukan
+        formalitas kata yang digunakan dan makna lainnya. Hiragana juga digunakan untuk menulis partikel (yang setara dengan kata depan dalam
+        bahasa Indonesia) dalam kalimat, serta kata-kata dalam bahasa Jepang yang tidak umum ditulis dengan kanji.</string>
+
+    <!-- pengantar katakana -->
+    <string name="judulkatakana">KATAKANA</string>
+    <string name="logokatakana">Logo katakana pengantar Kana Bisa</string>
+    <string name="tekskatakana">Katakana merupakan jenis aksara kana yang mengadopsi bagian tertentu dari aksara Mandarin secara konkrit.
+        Dalam penulisannya, goresan katakana bersifat lebih tajam, lurus, dan tegas dibandingkan dengan hiragana yang bersifat melengkung.
+        Pemakaian katakana yang utama adalah sebagai aksara yang dipakai dalam menuliskan kata serapan dari bahasa di luar Jepang (yang bukan
+        merupakan bahasa Mandarin), sesuai dengan pengucapan kata bersangkutan pada bahasa aslinya</string>
+
+    <!-- pengantar panduan -->
+    <string name="judulfitur">FUNGSIONALITAS APLIKASI</string>
+    <string name="teksfitur1">Pada dasarnya, aplikasi ini memiliki dua fungsi utama, yaitu menampilkan tabel kana (hiragana dan katakana) dan
+        menyediakan sistem evaluasi yang dapat membantu pengguna aplikasi untuk menilai sejauh mana penguasaan mereka dalam aksara kana. Tabel
+        kana yang ada akan disusun berdasarkan struktur huruf vokal "a-i-u-e-o" dengan urutan konsonan yang sesuai dengan tabel kana standar.
+        Jika pengguna memilih satu karakter tertentu, mereka akan diarahkan ke halaman karakter individual, yang akan menampilkan karakter
+        terpilih dengan ukuran lebih besar, dan dapat menunjukkan urutan penulisan huruf tersebut.</string>
+    <string name="teksfitur2">Selain fitur tabel kana, terdapat pula sistem evaluasi yang dapat membantu pengguna aplikasi dalam mengukur
+        seberapa baiknya penguasaan mereka terhadap aksara kana yang telah mereka pelajari. Dalam proses evaluasi, pengguna akan diberikan
+        10 karakter acak yang dipilih dengan mengukur seberapa baik penguasaan kana per karakter dari pengguna. Dari 10 karakter tersebut,
+        pengguna harus menebak romanisasi yang benar dari karakter tersebut, mengikuti empat pilihan yang disediakan oleh sistem. Nantinya,
+        akan diberikan info mengenai persentase karakter kana yang telah dikuasai oleh pengguna, serta tingkat penguasaan per karakter.
+    </string>
+
+</resources>

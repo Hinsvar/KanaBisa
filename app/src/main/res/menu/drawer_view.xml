@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+                android:id="@+id/optionBeranda"
+                android:title="@string/optberanda" />
+        <item
+                android:id="@+id/optionPengantar"
+                android:title="@string/optpengantar" />
+        <item
+                android:id="@+id/optionHiragana"
+                android:title="@string/opthiragana" />
+        <item
+                android:id="@+id/optionKatakana"
+                android:title="@string/optkatakana" />
+        <item
+                android:id="@+id/optionKompetensi"
+                android:title="@string/optkompetensi" />
+        <item
+                android:id="@+id/optionEvaluasi"
+                android:title="@string/optevaluasi" />
+    </group>
+</menu>

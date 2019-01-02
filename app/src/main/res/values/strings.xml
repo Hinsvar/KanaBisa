@@ -56,4 +56,11 @@
         akan diberikan info mengenai persentase karakter kana yang telah dikuasai oleh pengguna, serta tingkat penguasaan per karakter.
     </string>
 
+    <!-- beranda evaluasi -->
+    <string name="judulevaluasi">BERANDA EVALUASI</string>
+    <string name="deskripsievaluasi">Dalam proses evaluasi, akan diberikan sebuah karakter hiragana atau katakana secara acak, beserta 4 (empat)
+    buah pilihan berupa romanisasi karakter. Pilih salah satu jawaban yang diberikan. Benar atau salahnya pilihan tersebut akan mempengaruhi
+    penilaian penguasaan kana pengguna. Statistik tersebut nantinya dapat dilihat pada halaman kompetensi kana.</string>
+    <string name="tombolevaluasi">MULAI EVALUASI</string>
+
 </resources>

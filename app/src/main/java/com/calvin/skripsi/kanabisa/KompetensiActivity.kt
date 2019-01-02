@@ -1,6 +1,7 @@
 package com.calvin.skripsi.kanabisa
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -9,18 +10,17 @@ import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-import com.anychart.AnyChart
-import com.anychart.AnyChartView
-import com.anychart.charts.Pie
+import android.view.ViewGroup
+import android.widget.*
 import com.calvin.skripsi.kanabisa.model.Karakter
-import com.anychart.chart.common.dataentry.DataEntry
-import com.anychart.chart.common.dataentry.ValueDataEntry
+import lecho.lib.hellocharts.model.PieChartData
+import lecho.lib.hellocharts.model.SliceValue
+import lecho.lib.hellocharts.view.PieChartView
 
 class KompetensiActivity: AppCompatActivity() {
 
     private lateinit var mDrawerLayout: DrawerLayout
     val dbh = DBHelper(this)
-    var arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
     val batasNilai = 0.6
     val batasBanyak = 5
 
@@ -31,8 +31,8 @@ class KompetensiActivity: AppCompatActivity() {
         this.title = "Kompetensi"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        var pie: Pie = AnyChart.pie()
-        val pieKompetensi: AnyChartView = findViewById(R.id.grafikKompetensi)
+        var tabel: TableLayout = findViewById(R.id.tabel_detail)
+        var pieChartView: PieChartView = findViewById(R.id.grafikKompetensi)
         var pass = 0
         var fail = 0
 
@@ -53,13 +53,15 @@ class KompetensiActivity: AppCompatActivity() {
                 R.id.optionHiragana -> startActivity(Intent(this@KompetensiActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@KompetensiActivity,KatakanaActivity::class.java))
                 //4 -> kompetensi kana
-                //5 -> mulai Evaluasi
+                R.id.optionEvaluasi -> startActivity(Intent(this@KompetensiActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()
 
             true
         }
+
+        val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
 
         for (i in arrKr.indices) {
             if(arrKr[i].eval_nilai >= batasNilai && arrKr[i].eval_banyak >= batasBanyak) {
@@ -70,13 +72,49 @@ class KompetensiActivity: AppCompatActivity() {
             }
         }
 
-        var data: ArrayList<DataEntry> = ArrayList<DataEntry>()
-        data.add(ValueDataEntry("Dikuasai",pass))
-        data.add(ValueDataEntry("Dipelajari",fail))
+        var pieData: ArrayList<SliceValue> = ArrayList()
+        pieData.add(SliceValue(pass.toFloat(), Color.GREEN).setLabel("Dikuasai"))
+        pieData.add(SliceValue(fail.toFloat(), Color.RED).setLabel("Dipelajari"))
 
-        pie.data(data)
+        val pieChartData: PieChartData = PieChartData(pieData)
+        pieChartData.setHasLabels(true)
+        pieChartView.pieChartData = pieChartData
 
-        pieKompetensi.setChart(pie)
+        val textDikuasai: TextView = findViewById(R.id.textDikuasai)
+        val textDipelajari: TextView = findViewById(R.id.textDipelajari)
+
+        textDikuasai.text = "Dikuasai: " + pass.toString()
+        textDipelajari.text = "Dipelajari: " + fail.toString()
+
+        //table row > text view
+
+        val tabelR1: TableRow = findViewById(R.id.baris_detail)
+        val textV1: TextView = findViewById(R.id.header_aksara)
+
+        for(i in arrKr.indices) {
+            var tabelR: TableRow = TableRow(this@KompetensiActivity)
+            tabelR.layoutParams = TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, 0)
+            tabelR.weightSum = tabelR1.weightSum
+
+            for (j in 0..4) {
+                var textV: TextView = TextView(this@KompetensiActivity)
+                textV.layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 64, 0.2f)
+                textV.textSize = 16f
+                textV.gravity = textV1.gravity
+                when (j) {
+                    0 -> textV.text = arrKr[i].karakter
+                    1 -> textV.text = arrKr[i].roman
+                    2 -> textV.text = arrKr[i].eval_banyak.toString()
+                    3 -> textV.text = arrKr[i].eval_benar.toString()
+                    4 -> textV.text = String.format("%.2f", arrKr[i].eval_nilai.toFloat())
+                }
+
+                tabelR.addView(textV)
+            }
+
+            tabel.addView(tabelR)
+        }
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

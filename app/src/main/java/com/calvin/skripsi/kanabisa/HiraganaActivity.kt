@@ -48,7 +48,7 @@ class HiraganaActivity: AppCompatActivity() {
                 //2 -> tabel hiragana
                 R.id.optionKatakana -> startActivity(Intent(this@HiraganaActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@HiraganaActivity,KompetensiActivity::class.java))
-                //5 -> mulai Evaluasi
+                R.id.optionEvaluasi -> startActivity(Intent(this@HiraganaActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()

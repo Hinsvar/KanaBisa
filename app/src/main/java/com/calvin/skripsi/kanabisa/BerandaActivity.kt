@@ -39,7 +39,7 @@ class BerandaActivity : AppCompatActivity() {
                 R.id.optionHiragana -> startActivity(Intent(this@BerandaActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@BerandaActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@BerandaActivity,KompetensiActivity::class.java))
-                //5 -> mulai Evaluasi
+                R.id.optionEvaluasi -> startActivity(Intent(this@BerandaActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()

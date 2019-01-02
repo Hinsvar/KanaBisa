@@ -57,7 +57,7 @@ class KarakterActivity: AppCompatActivity() {
             btnKar.visibility = View.VISIBLE
             btnKar.text = "LIHAT URUTAN"
             nama_gambar_urutan = nama_gambar_urutan.plus(nama_gambar + "urutan_" + gambar)
-            res_id_urutan = this.getResources().getIdentifier(nama_gambar_urutan,"drawable",this.getPackageName())
+            res_id_urutan = this.resources.getIdentifier(nama_gambar_urutan,"drawable",this.getPackageName())
         }
 
         imgKar.setImageResource(res_id_dasar)
@@ -96,7 +96,7 @@ class KarakterActivity: AppCompatActivity() {
                 R.id.optionHiragana -> startActivity(Intent(this@KarakterActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@KarakterActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@KarakterActivity,KompetensiActivity::class.java))
-                //5 -> mulai Evaluasi
+                R.id.optionEvaluasi -> startActivity(Intent(this@KarakterActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()
@@ -113,6 +113,10 @@ class KarakterActivity: AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onBackPressed() {
+        this.finish()
     }
 }
 

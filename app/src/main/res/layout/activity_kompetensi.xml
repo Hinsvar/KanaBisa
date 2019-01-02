@@ -11,7 +11,7 @@
     <ScrollView
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
-            tools:context=".PengantarActivity"
+            tools:context=".KompetensiActivity"
             android:id="@+id/ScrollViewKompetensi"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                tools:context=".PengantarActivity">
+                tools:context=".KompetensiActivity">
 
             <TextView
                     android:id="@+id/textChart"
@@ -37,12 +37,119 @@
                     android:textSize="32sp"
                     android:textStyle="bold"/>
 
-            <com.anychart.AnyChartView
+            <lecho.lib.hellocharts.view.PieChartView
                     android:id="@+id/grafikKompetensi"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_below="@id/textChart"
+                    android:layout_marginTop="32dp"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:id="@+id/textDikuasai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
-            />
+                    android:layout_below="@id/grafikKompetensi"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:text="Dikuasai: "/>
+
+            <TextView
+                    android:id="@+id/textDipelajari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDikuasai"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:text="Dipelajari: "/>
+
+            <TextView
+                    android:textAlignment="viewStart"
+                    android:id="@+id/textDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDipelajari"
+                    android:layout_centerHorizontal="true"
+                    android:text="DETAIL PER AKSARA"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="32sp"
+                    android:textStyle="bold"/>
+
+            <!-- awal tabel -->
+
+            <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tabel_detail"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/textDetail">
+
+                <!-- baris header tabel -->
+
+                <TableRow
+                        android:id="@+id/baris_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                                android:id="@+id/header_aksara"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aksara"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_weight="0.2"/>
+
+                        <TextView
+                                android:id="@+id/header_roman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Roman"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_weight="0.2"/>
+
+                        <TextView
+                                android:id="@+id/header_diajukan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Diajukan"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_weight="0.2"/>
+
+                        <TextView
+                                android:id="@+id/header_benar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Benar"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_weight="0.2"/>
+
+                        <TextView
+                                android:id="@+id/header_nilai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nilai"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_weight="0.2"/>
+
+                </TableRow>
+
+            </TableLayout>
 
         </android.widget.RelativeLayout>
 

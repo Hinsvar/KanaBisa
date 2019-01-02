@@ -64,92 +64,32 @@
                     android:textSize="16sp"
                     android:text="Dipelajari: "/>
 
-            <TextView
-                    android:textAlignment="viewStart"
-                    android:id="@+id/textDetail"
+            <Button
+                    android:id="@+id/buttonDetailHiragana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textDipelajari"
-                    android:layout_centerHorizontal="true"
-                    android:text="DETAIL PER AKSARA"
-                    android:layout_marginTop="80dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:textSize="32sp"
-                    android:textStyle="bold"/>
-
-            <!-- awal tabel -->
-
-            <TableLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/tabel_detail"
+                    android:text="Lihat Detail Hiragana"
                     android:layout_marginTop="24dp"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@id/textDetail">
+                    android:layout_below="@id/textDipelajari"
+                    android:layout_centerHorizontal="true"/>
 
-                <!-- baris header tabel -->
+            <Button
+                    android:id="@+id/buttonDetailKatakana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Detail Katakana"
+                    android:layout_marginTop="24dp"
+                    android:layout_below="@id/buttonDetailHiragana"
+                    android:layout_centerHorizontal="true"/>
 
-                <TableRow
-                        android:id="@+id/baris_detail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                                android:id="@+id/header_aksara"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Aksara"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:layout_weight="0.2"/>
-
-                        <TextView
-                                android:id="@+id/header_roman"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Roman"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:layout_weight="0.2"/>
-
-                        <TextView
-                                android:id="@+id/header_diajukan"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Diajukan"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:layout_weight="0.2"/>
-
-                        <TextView
-                                android:id="@+id/header_benar"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Benar"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:layout_weight="0.2"/>
-
-                        <TextView
-                                android:id="@+id/header_nilai"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Nilai"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:layout_weight="0.2"/>
-
-                </TableRow>
-
-            </TableLayout>
+            <Button
+                    android:id="@+id/buttonHistori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Histori Evaluasi"
+                    android:layout_marginVertical="24dp"
+                    android:layout_below="@id/buttonDetailKatakana"
+                    android:layout_centerHorizontal="true"/>
 
         </android.widget.RelativeLayout>
 

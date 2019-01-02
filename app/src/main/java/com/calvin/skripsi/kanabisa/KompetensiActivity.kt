@@ -10,7 +10,6 @@ import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-import android.view.ViewGroup
 import android.widget.*
 import com.calvin.skripsi.kanabisa.model.Karakter
 import lecho.lib.hellocharts.model.PieChartData
@@ -31,8 +30,9 @@ class KompetensiActivity: AppCompatActivity() {
         this.title = "Kompetensi"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        var tabel: TableLayout = findViewById(R.id.tabel_detail)
         var pieChartView: PieChartView = findViewById(R.id.grafikKompetensi)
+        val btnDetailH: Button = findViewById(R.id.buttonDetailHiragana)
+        val btnDetailK: Button = findViewById(R.id.buttonDetailKatakana)
         var pass = 0
         var fail = 0
 
@@ -86,35 +86,13 @@ class KompetensiActivity: AppCompatActivity() {
         textDikuasai.text = "Dikuasai: " + pass.toString()
         textDipelajari.text = "Dipelajari: " + fail.toString()
 
-        //table row > text view
-
-        val tabelR1: TableRow = findViewById(R.id.baris_detail)
-        val textV1: TextView = findViewById(R.id.header_aksara)
-
-        for(i in arrKr.indices) {
-            var tabelR: TableRow = TableRow(this@KompetensiActivity)
-            tabelR.layoutParams = TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, 0)
-            tabelR.weightSum = tabelR1.weightSum
-
-            for (j in 0..4) {
-                var textV: TextView = TextView(this@KompetensiActivity)
-                textV.layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 64, 0.2f)
-                textV.textSize = 16f
-                textV.gravity = textV1.gravity
-                when (j) {
-                    0 -> textV.text = arrKr[i].karakter
-                    1 -> textV.text = arrKr[i].roman
-                    2 -> textV.text = arrKr[i].eval_banyak.toString()
-                    3 -> textV.text = arrKr[i].eval_benar.toString()
-                    4 -> textV.text = String.format("%.2f", arrKr[i].eval_nilai.toFloat())
-                }
-
-                tabelR.addView(textV)
-            }
-
-            tabel.addView(tabelR)
+        btnDetailH.setOnClickListener {
+            startActivity(Intent(this@KompetensiActivity,TabelDetailHiraganaActivity::class.java))
         }
 
+        btnDetailK.setOnClickListener {
+            startActivity(Intent(this@KompetensiActivity,TabelDetailKatakanaActivity::class.java))
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

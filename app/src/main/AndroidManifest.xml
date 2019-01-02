@@ -44,6 +44,12 @@
         <activity android:name=".EvaluasiActivity">
         </activity>
 
+        <activity android:name=".TabelDetailHiraganaActivity">
+        </activity>
+
+        <activity android:name=".TabelDetailKatakanaActivity">
+        </activity>
+
     </application>
 
 </manifest>

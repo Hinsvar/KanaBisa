@@ -50,6 +50,9 @@
         <activity android:name=".TabelDetailKatakanaActivity">
         </activity>
 
+        <activity android:name=".HistoriActivity">
+        </activity>
+
     </application>
 
 </manifest>

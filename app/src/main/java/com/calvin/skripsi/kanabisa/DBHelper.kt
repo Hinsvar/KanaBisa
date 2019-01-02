@@ -529,4 +529,30 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
             db.close()
         }
     }
+
+    fun tabelEvaluasi(): ArrayList<Evaluasi> {
+        var arrEv: ArrayList<Evaluasi> = ArrayList<Evaluasi>()
+        val db = this.readableDatabase
+        val rs: Cursor = db.rawQuery("SELECT * FROM TBL_EVALUASI",null)
+        try {
+            if (rs != null) {
+                if (rs.moveToFirst()) {
+                    do {
+                        arrEv.add(
+                            Evaluasi(
+                                rs.getInt(rs.getColumnIndex("ID")),
+                                rs.getInt(rs.getColumnIndex("ID_KARAKTER")),
+                                rs.getString(rs.getColumnIndex("TANGGAL")),
+                                rs.getInt(rs.getColumnIndex("STATUS")) > 0)
+                            )
+                    } while (rs.moveToNext())
+                }
+            }
+        }
+        finally {
+            rs.close()
+            db.close()
+        }
+        return arrEv
+    }
 }

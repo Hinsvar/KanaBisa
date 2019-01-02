@@ -30,7 +30,9 @@ class KompetensiActivity: AppCompatActivity() {
         this.title = "Kompetensi"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
+        val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
         var pieChartView: PieChartView = findViewById(R.id.grafikKompetensi)
+        val btnHistori: Button = findViewById(R.id.buttonHistori)
         val btnDetailH: Button = findViewById(R.id.buttonDetailHiragana)
         val btnDetailK: Button = findViewById(R.id.buttonDetailKatakana)
         var pass = 0
@@ -61,8 +63,6 @@ class KompetensiActivity: AppCompatActivity() {
             true
         }
 
-        val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
-
         for (i in arrKr.indices) {
             if(arrKr[i].eval_nilai >= batasNilai && arrKr[i].eval_banyak >= batasBanyak) {
                 pass++
@@ -85,6 +85,10 @@ class KompetensiActivity: AppCompatActivity() {
 
         textDikuasai.text = "Dikuasai: " + pass.toString()
         textDipelajari.text = "Dipelajari: " + fail.toString()
+
+        btnHistori.setOnClickListener {
+            startActivity((Intent(this@KompetensiActivity,HistoriActivity::class.java)))
+        }
 
         btnDetailH.setOnClickListener {
             startActivity(Intent(this@KompetensiActivity,TabelDetailHiraganaActivity::class.java))

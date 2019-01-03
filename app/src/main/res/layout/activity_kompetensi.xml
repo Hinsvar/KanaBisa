@@ -31,14 +31,14 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
-                    android:text="GRAFIK KOMPETENSI"
+                    android:text="BAGAN KOMPETENSI"
                     android:layout_marginTop="80dp"
                     android:fontFamily="sans-serif-condensed"
                     android:textSize="32sp"
                     android:textStyle="bold"/>
 
             <lecho.lib.hellocharts.view.PieChartView
-                    android:id="@+id/grafikKompetensi"
+                    android:id="@+id/baganKompetensi"
                     android:layout_width="320dp"
                     android:layout_height="320dp"
                     android:layout_below="@id/textChart"
@@ -49,7 +49,7 @@
                     android:id="@+id/textDikuasai"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/grafikKompetensi"
+                    android:layout_below="@id/baganKompetensi"
                     android:layout_marginTop="20dp"
                     android:layout_centerHorizontal="true"
                     android:textSize="16sp"

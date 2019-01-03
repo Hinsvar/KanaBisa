@@ -12,10 +12,11 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             tools:context=".HistoriActivity"
-            android:id="@+id/ScrollViewKompetensi"
+            android:id="@+id/ScrollViewHistori"
             android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
         <android.widget.RelativeLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"

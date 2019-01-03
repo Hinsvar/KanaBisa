@@ -31,7 +31,7 @@ class KompetensiActivity: AppCompatActivity() {
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
         val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
-        var pieChartView: PieChartView = findViewById(R.id.grafikKompetensi)
+        var pieChartView: PieChartView = findViewById(R.id.baganKompetensi)
         val btnHistori: Button = findViewById(R.id.buttonHistori)
         val btnDetailH: Button = findViewById(R.id.buttonDetailHiragana)
         val btnDetailK: Button = findViewById(R.id.buttonDetailKatakana)

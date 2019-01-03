@@ -9,7 +9,7 @@ import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-import com.calvin.skripsi.kanabisa.model.Karakter
+import android.widget.ListView
 import com.calvin.skripsi.kanabisa.model.Evaluasi
 
 class HistoriActivity: AppCompatActivity() {
@@ -24,8 +24,8 @@ class HistoriActivity: AppCompatActivity() {
         this.title = "Histori"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
         val arrEv: ArrayList<Evaluasi> = dbh.tabelEvaluasi()
+        val historiLV: ListView = findViewById(R.id.listHistori)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -51,6 +51,9 @@ class HistoriActivity: AppCompatActivity() {
 
             true
         }
+
+        var historiAdapter = EvaluasiListAdapter(arrEv, this)
+        historiLV.adapter = historiAdapter
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

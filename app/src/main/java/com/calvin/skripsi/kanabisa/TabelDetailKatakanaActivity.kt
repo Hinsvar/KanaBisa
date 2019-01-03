@@ -24,7 +24,7 @@ class TabelDetailKatakanaActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tabel_detail_katakana)
 
-        this.title = "Detail per Aksara"
+        this.title = "Detail Karakter Katakana"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
         val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
@@ -75,7 +75,7 @@ class TabelDetailKatakanaActivity: AppCompatActivity() {
                     1 -> textV.text = arrKr[i].roman
                     2 -> textV.text = arrKr[i].eval_banyak.toString()
                     3 -> textV.text = arrKr[i].eval_benar.toString()
-                    4 -> textV.text = String.format("%.2f", arrKr[i].eval_nilai.toFloat())
+                    4 -> textV.text = String.format("%.2f", arrKr[i].eval_nilai.toFloat() * 100)
                 }
 
                 tabelR.addView(textV)

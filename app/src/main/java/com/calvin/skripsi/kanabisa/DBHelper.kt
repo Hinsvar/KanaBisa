@@ -6,7 +6,6 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.calvin.skripsi.kanabisa.model.*
-import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -14,7 +13,7 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
     val arrKarakter: ArrayList<Karakter> = ArrayList<Karakter>(208)
     val arrJenis: ArrayList<Jenis> = ArrayList<Jenis>(2)
     val arrBunyi: ArrayList<Bunyi> = ArrayList<Bunyi>(2)
-    val arrEvaluasi: ArrayList<Evaluasi> = ArrayList<Evaluasi>()
+    val arrEvaluasi: ArrayList<DetailEvaluasi> = ArrayList<DetailEvaluasi>()
 
     override fun onCreate(db: SQLiteDatabase?) {
         val createKarakter = "CREATE TABLE IF NOT EXISTS TBL_KARAKTER(" +
@@ -35,13 +34,19 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
                 "BUNYI TEXT)"
         val createEvaluasi = "CREATE TABLE IF NOT EXISTS TBL_EVALUASI(" +
                 "ID INTEGER PRIMARY KEY," +
-                "ID_KARAKTER INTEGER," +
                 "TANGGAL TEXT," +
+                "BANYAK INTEGER," +
+                "BENAR INTEGER)"
+        val createEvaluasiDetail = "CREATE TABLE IF NOT EXISTS TBL_DETAIL_EVALUASI(" +
+                "ID INTEGER PRIMARY KEY," +
+                "ID_EVALUASI INTEGER," +
+                "ID_KARAKTER INTEGER," +
                 "STATUS INTEGER)"
         db!!.execSQL(createKarakter)
         db.execSQL(createJenis)
         db.execSQL(createBunyi)
         db.execSQL(createEvaluasi)
+        db.execSQL(createEvaluasiDetail)
 
         initArrKarakter()
         initArrJenis()
@@ -490,6 +495,44 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
         return arrKr
     }
 
+    fun maxEvalId(): Int{
+        val db = this.readableDatabase
+        var maxId = 0
+        val rs: Cursor = db.rawQuery("SELECT MAX(ID) AS max_id FROM TBL_EVALUASI",null)
+        try {
+            if (rs != null) {
+                if (rs.moveToFirst()) {
+                    maxId = rs.getInt(rs.getColumnIndex("max_id"))
+                }
+                else {
+                    maxId = 0
+                }
+            }
+        }
+        finally {
+            rs.close()
+            db.close()
+        }
+        return maxId
+    }
+
+    fun mulaiEvaluasi(bnr: Int) {
+        val db = this.writableDatabase
+        val dateNow: Date = Calendar.getInstance().time
+        val sdf = SimpleDateFormat("DD-MM-YYYY HH:mm:ss")
+        val dateStr = sdf.format(dateNow)
+        val cv = ContentValues()
+        try {
+            cv.put("TANGGAL", dateStr)
+            cv.put("BANYAK", 1)
+            cv.put("BENAR", bnr)
+            db.insert("TBL_EVALUASI", null, cv)
+        }
+        finally {
+            db.close()
+        }
+    }
+
     fun prosesEvaluasi(cond: Boolean, kar: Karakter) {
         val db = this.writableDatabase
         val newEvalBanyak = kar.eval_banyak + 1
@@ -513,17 +556,28 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
         }
     }
 
-    fun rekamEvaluasi(cond: Boolean, kar: Karakter) {
+    fun rekamEvaluasi(idEval: Int, bnyk: Int, bnr: Int) {
         val db = this.writableDatabase
-        val dateNow: Date = Calendar.getInstance().time
-        val sdf = SimpleDateFormat("DD-MM-YYYY HH:mm:ss")
-        val dateStr = sdf.format(dateNow)
         val cv = ContentValues()
         try {
-            cv.put("ID_KARAKTER", kar.id)
-            cv.put("TANGGAL", dateStr)
+            cv.put("BANYAK", bnyk)
+            cv.put("BENAR", bnr)
+            db.update("TBL_EVALUASI", cv,"ID = ?", arrayOf(idEval.toString()))
+        }
+        finally {
+            db.close()
+        }
+    }
+
+    fun rekamDetailEvaluasi(idEval: Int, kar: Karakter, cond: Boolean) {
+        val db = this.writableDatabase
+        val idKar = kar.id
+        val cv = ContentValues()
+        try {
+            cv.put("ID_EVALUASI", idEval)
+            cv.put("ID_KARAKTER", idKar)
             cv.put("STATUS", cond)
-            db.insert("TBL_EVALUASI", null, cv)
+            db.insert("TBL_DETAIL_EVALUASI", null, cv)
         }
         finally {
             db.close()
@@ -531,7 +585,7 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
     }
 
     fun tabelEvaluasi(): ArrayList<Evaluasi> {
-        var arrEv: ArrayList<Evaluasi> = ArrayList<Evaluasi>()
+        var arrEv = ArrayList<Evaluasi>()
         val db = this.readableDatabase
         val rs: Cursor = db.rawQuery("SELECT * FROM TBL_EVALUASI",null)
         try {
@@ -541,10 +595,11 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
                         arrEv.add(
                             Evaluasi(
                                 rs.getInt(rs.getColumnIndex("ID")),
-                                rs.getInt(rs.getColumnIndex("ID_KARAKTER")),
                                 rs.getString(rs.getColumnIndex("TANGGAL")),
-                                rs.getInt(rs.getColumnIndex("STATUS")) > 0)
+                                rs.getInt(rs.getColumnIndex("BANYAK")),
+                                rs.getInt(rs.getColumnIndex("BENAR"))
                             )
+                        )
                     } while (rs.moveToNext())
                 }
             }
@@ -554,5 +609,32 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
             db.close()
         }
         return arrEv
+    }
+
+    fun tabelDetailEvaluasi(): ArrayList<DetailEvaluasi> {
+        var arrDetEv = ArrayList<DetailEvaluasi>()
+        val db = this.readableDatabase
+        val rs: Cursor = db.rawQuery("SELECT * FROM TBL_DETAIL_EVALUASI",null)
+        try {
+            if (rs != null) {
+                if (rs.moveToFirst()) {
+                    do {
+                        arrDetEv.add(
+                            DetailEvaluasi(
+                                rs.getInt(rs.getColumnIndex("ID")),
+                                rs.getInt(rs.getColumnIndex("ID_EVALUASI")),
+                                rs.getInt(rs.getColumnIndex("ID_KARAKTER")),
+                                rs.getInt(rs.getColumnIndex("STATUS")) > 0
+                            )
+                        )
+                    } while (rs.moveToNext())
+                }
+            }
+        }
+        finally {
+            rs.close()
+            db.close()
+        }
+        return arrDetEv
     }
 }

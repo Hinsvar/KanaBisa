@@ -66,7 +66,6 @@ class KatakanaActivity: AppCompatActivity() {
                         cellNum++
                         tabelC.setTag(cellNum.toString())
                         tabelC.setOnClickListener {
-                            //Toast.makeText(this@KatakanaActivity,tabelC.getTag().toString(),Toast.LENGTH_SHORT).show()
                             val kr: Karakter = dbh.cariKarakter(tabelC.getTag().toString().toInt())
                             val intent = Intent(this@KatakanaActivity, KarakterActivity::class.java)
                             val bundle = Bundle()

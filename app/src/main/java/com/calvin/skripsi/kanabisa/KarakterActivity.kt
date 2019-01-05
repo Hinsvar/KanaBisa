@@ -46,7 +46,7 @@ class KarakterActivity: AppCompatActivity() {
         }
 
         nama_gambar_dasar = nama_gambar_dasar.plus(nama_gambar + "dasar_" + gambar + "_large")
-        val res_id_dasar: Int = this.resources.getIdentifier(nama_gambar_dasar,"drawable",this.packageName)
+        val res_id_dasar: Int = this.resources.getIdentifier(nama_gambar_dasar, "drawable", this.packageName)
         var res_id_urutan = 0
         //Toast.makeText(this,nama_gambar_dasar,Toast.LENGTH_SHORT).show()
 
@@ -57,7 +57,7 @@ class KarakterActivity: AppCompatActivity() {
             btnKar.visibility = View.VISIBLE
             btnKar.text = "LIHAT URUTAN"
             nama_gambar_urutan = nama_gambar_urutan.plus(nama_gambar + "urutan_" + gambar)
-            res_id_urutan = this.resources.getIdentifier(nama_gambar_urutan,"drawable",this.getPackageName())
+            res_id_urutan = this.resources.getIdentifier(nama_gambar_urutan, "drawable", this.packageName)
         }
 
         imgKar.setImageResource(res_id_dasar)

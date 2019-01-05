@@ -20,9 +20,12 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
         setContentView(R.layout.activity_beranda_evaluasi)
 
         this.title = "Evaluasi"
+        val dbh = DBHelper(this)
+        val maxEvalId = dbh.maxEvalId()
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
         var btnEval: Button = findViewById(R.id.buttonEvaluasi)
+        val btnHistori: Button = findViewById(R.id.buttonHistori)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -50,7 +53,18 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
         }
 
         btnEval.setOnClickListener {
-            startActivity(Intent(this@BerandaEvaluasiActivity, EvaluasiActivity::class.java))
+            val intent = Intent(this@BerandaEvaluasiActivity, EvaluasiActivity::class.java)
+            val bundle = Bundle()
+            bundle.putBoolean("inProg", false)
+            bundle.putInt("id",maxEvalId)
+            bundle.putInt("banyak",0)
+            bundle.putInt("benar",0)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
+        btnHistori.setOnClickListener {
+            startActivity((Intent(this@BerandaEvaluasiActivity,HistoriActivity::class.java)))
         }
     }
 

@@ -32,7 +32,6 @@ class KompetensiActivity: AppCompatActivity() {
         mDrawerLayout = findViewById(R.id.drawer_layout)
         val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
         var pieChartView: PieChartView = findViewById(R.id.baganKompetensi)
-        val btnHistori: Button = findViewById(R.id.buttonHistori)
         val btnDetailH: Button = findViewById(R.id.buttonDetailHiragana)
         val btnDetailK: Button = findViewById(R.id.buttonDetailKatakana)
         var pass = 0
@@ -85,10 +84,6 @@ class KompetensiActivity: AppCompatActivity() {
 
         textDikuasai.text = "Dikuasai: " + pass.toString()
         textDipelajari.text = "Dipelajari: " + fail.toString()
-
-        btnHistori.setOnClickListener {
-            startActivity((Intent(this@KompetensiActivity,HistoriActivity::class.java)))
-        }
 
         btnDetailH.setOnClickListener {
             startActivity(Intent(this@KompetensiActivity,TabelDetailHiraganaActivity::class.java))

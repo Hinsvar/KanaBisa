@@ -65,21 +65,12 @@
                     android:text="Dipelajari: "/>
 
             <Button
-                    android:id="@+id/buttonHistori"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Histori Evaluasi"
-                    android:layout_marginTop="24dp"
-                    android:layout_below="@id/textDipelajari"
-                    android:layout_centerHorizontal="true"/>
-
-            <Button
                     android:id="@+id/buttonDetailHiragana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lihat Detail Hiragana"
                     android:layout_marginTop="24dp"
-                    android:layout_below="@id/buttonHistori"
+                    android:layout_below="@id/textDipelajari"
                     android:layout_centerHorizontal="true"/>
 
             <Button

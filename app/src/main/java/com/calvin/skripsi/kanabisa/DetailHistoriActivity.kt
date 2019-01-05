@@ -9,24 +9,31 @@ import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-import android.widget.AdapterView
 import android.widget.ListView
-import com.calvin.skripsi.kanabisa.model.Evaluasi
+import com.calvin.skripsi.kanabisa.model.DetailEvaluasi
 
-class HistoriActivity: AppCompatActivity() {
+class DetailHistoriActivity: AppCompatActivity() {
 
     private lateinit var mDrawerLayout: DrawerLayout
     val dbh = DBHelper(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_histori)
+        setContentView(R.layout.activity_detail_histori)
 
-        this.title = "Histori"
+        this.title = "Detail Histori"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        val arrEv: ArrayList<Evaluasi> = dbh.tabelEvaluasi()
-        val historiLV: ListView = findViewById(R.id.listHistori)
+        val idEval = intent.extras.getInt("id")
+        val arrDetEv: ArrayList<DetailEvaluasi> = dbh.tabelDetailEvaluasi()
+        var arrDetEvIdEval = ArrayList<DetailEvaluasi>()
+        val detHistoriLV: ListView = findViewById(R.id.listDetailHistori)
+
+        for (i in arrDetEv.indices) {
+            if (arrDetEv[i].id_evaluasi == idEval) {
+                arrDetEvIdEval.add(arrDetEv[i])
+            }
+        }
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -40,12 +47,12 @@ class HistoriActivity: AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
 
             when (menuItem.itemId) {
-                R.id.optionBeranda -> startActivity(Intent(this@HistoriActivity,BerandaActivity::class.java))
-                R.id.optionPengantar -> startActivity(Intent(this@HistoriActivity,PengantarActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@HistoriActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@HistoriActivity,KatakanaActivity::class.java))
-                R.id.optionKompetensi -> startActivity(Intent(this@HistoriActivity,KompetensiActivity::class.java))
-                R.id.optionEvaluasi -> startActivity(Intent(this@HistoriActivity,BerandaEvaluasiActivity::class.java))
+                R.id.optionBeranda -> startActivity(Intent(this@DetailHistoriActivity,BerandaActivity::class.java))
+                R.id.optionPengantar -> startActivity(Intent(this@DetailHistoriActivity,PengantarActivity::class.java))
+                R.id.optionHiragana -> startActivity(Intent(this@DetailHistoriActivity,HiraganaActivity::class.java))
+                R.id.optionKatakana -> startActivity(Intent(this@DetailHistoriActivity,KatakanaActivity::class.java))
+                R.id.optionKompetensi -> startActivity(Intent(this@DetailHistoriActivity,KompetensiActivity::class.java))
+                R.id.optionEvaluasi -> startActivity(Intent(this@DetailHistoriActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()
@@ -53,15 +60,8 @@ class HistoriActivity: AppCompatActivity() {
             true
         }
 
-        var historiAdapter = EvaluasiListAdapter(arrEv, this)
-        historiLV.adapter = historiAdapter
-
-        historiLV.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            val item = parent.getItemAtPosition(position) as Evaluasi
-            val intent = Intent(this@HistoriActivity,DetailHistoriActivity::class.java)
-            intent.putExtra("id", item.id)
-            startActivity(intent)
-        }
+        var historiAdapter = DetailEvaluasiListAdapter(arrDetEvIdEval, this)
+        detHistoriLV.adapter = historiAdapter
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

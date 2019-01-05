@@ -53,6 +53,9 @@
         <activity android:name=".HistoriActivity">
         </activity>
 
+        <activity android:name=".DetailHistoriActivity">
+        </activity>
+
     </application>
 
 </manifest>

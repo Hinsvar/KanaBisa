@@ -22,6 +22,10 @@ class EvaluasiActivity: AppCompatActivity() {
         val dbh = DBHelper(this)
         val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
         val randNum = Random.nextInt(1,208)
+        val inProgress: Boolean = intent.extras.getBoolean("inProg")
+        var idEval = intent.extras.getInt("id")
+        var evalBanyak = intent.extras.getInt("banyak")
+        var evalBenar = intent.extras.getInt("benar")
 
         var gambarKarakter: ImageView = findViewById(R.id.gambarEval)
         var radioG: RadioGroup = findViewById(R.id.radGroup)
@@ -92,12 +96,32 @@ class EvaluasiActivity: AppCompatActivity() {
                     if (radBut is RadioButton) {
                         if (radBut.isChecked) {
                             if (radBut.text.toString().equals(truerom)) {
-                                dbh.prosesEvaluasi(true, kr)
-                                dbh.rekamEvaluasi(true, kr)
+                                if (!inProgress) {
+                                    evalBanyak++
+                                    evalBenar++
+                                    dbh.mulaiEvaluasi(evalBenar)
+                                    dbh.prosesEvaluasi(true, kr)
+                                    dbh.rekamDetailEvaluasi(idEval + 1, kr, true)
+                                    idEval = dbh.maxEvalId()
+                                }
+                                else {
+                                    evalBanyak++
+                                    evalBenar++
+                                    dbh.prosesEvaluasi(true, kr)
+                                    dbh.rekamEvaluasi(idEval, evalBanyak, evalBenar)
+                                    dbh.rekamDetailEvaluasi(idEval, kr, true)
+                                }
                                 builder.setTitle("Jawaban Benar")
                                 builder.setMessage("Selamat, jawaban Anda benar!")
                                 builder.setPositiveButton("Lanjutkan") {dialogInterface, i ->
-                                    startActivity(Intent(this@EvaluasiActivity,EvaluasiActivity::class.java))
+                                    val intent = Intent(this@EvaluasiActivity,EvaluasiActivity::class.java)
+                                    val bundle = Bundle()
+                                    bundle.putBoolean("inProg", true)
+                                    bundle.putInt("id", idEval)
+                                    bundle.putInt("banyak", evalBanyak)
+                                    bundle.putInt("benar", evalBenar)
+                                    intent.putExtras(bundle)
+                                    startActivity(intent)
                                     this.finish()
                                 }
                                 builder.setNegativeButton("Keluar") {dialogInterface, i ->
@@ -108,12 +132,30 @@ class EvaluasiActivity: AppCompatActivity() {
                                 builder.show()
                             }
                             else {
-                                dbh.prosesEvaluasi(false, kr)
-                                dbh.rekamEvaluasi(false, kr)
+                                if(!inProgress) {
+                                    evalBanyak++
+                                    dbh.mulaiEvaluasi(evalBenar)
+                                    dbh.prosesEvaluasi(false, kr)
+                                    dbh.rekamDetailEvaluasi(idEval + 1, kr, false)
+                                    idEval = dbh.maxEvalId()
+                                }
+                                else {
+                                    evalBanyak++
+                                    dbh.prosesEvaluasi(false, kr)
+                                    dbh.rekamEvaluasi(idEval, evalBanyak, evalBenar)
+                                    dbh.rekamDetailEvaluasi(idEval, kr, false)
+                                }
                                 builder.setTitle("Jawaban Salah")
                                 builder.setMessage("Maaf, jawaban Anda salah! Jawaban yang benar adalah "+truerom+".")
                                 builder.setPositiveButton("Lanjutkan") {dialogInterface, i ->
-                                    startActivity(Intent(this@EvaluasiActivity,EvaluasiActivity::class.java))
+                                    val intent = Intent(this@EvaluasiActivity,EvaluasiActivity::class.java)
+                                    val bundle = Bundle()
+                                    bundle.putBoolean("inProg", true)
+                                    bundle.putInt("id", idEval)
+                                    bundle.putInt("banyak", evalBanyak)
+                                    bundle.putInt("benar", evalBenar)
+                                    intent.putExtras(bundle)
+                                    startActivity(intent)
                                     this.finish()
                                 }
                                 builder.setNegativeButton("Keluar") {dialogInterface, i ->

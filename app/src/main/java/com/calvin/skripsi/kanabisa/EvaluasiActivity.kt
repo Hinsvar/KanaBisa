@@ -42,6 +42,7 @@ class EvaluasiActivity: AppCompatActivity() {
             arrKr[randNum].eval_benar,
             arrKr[randNum].eval_nilai)
         var nama_gambar = ""
+        val truerom = kr.roman
 
         when (kr.id_jenis) {
             1 -> nama_gambar = nama_gambar + "h_dasar_" + kr.gambar + "_large"
@@ -89,7 +90,6 @@ class EvaluasiActivity: AppCompatActivity() {
                 Toast.makeText(this, "Belum ada jawaban yang dipilih!", Toast.LENGTH_SHORT).show()
             }
             else {
-                val truerom = kr.roman
                 val radCheckId = radioG.checkedRadioButtonId
                 for (i in 0 until radioG.childCount) {
                     val radBut: View = radioG.getChildAt(i)

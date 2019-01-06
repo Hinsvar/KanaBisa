@@ -21,10 +21,10 @@ class DetailHistoriActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_histori)
 
-        this.title = "Detail Histori"
+        val idEval = intent.extras.getInt("id")
+        this.title = "Detail Histori - Evaluasi " + idEval.toString()
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        val idEval = intent.extras.getInt("id")
         val arrDetEv: ArrayList<DetailEvaluasi> = dbh.tabelDetailEvaluasi()
         var arrDetEvIdEval = ArrayList<DetailEvaluasi>()
         val detHistoriLV: ListView = findViewById(R.id.listDetailHistori)

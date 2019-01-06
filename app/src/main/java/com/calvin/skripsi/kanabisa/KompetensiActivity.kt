@@ -72,10 +72,10 @@ class KompetensiActivity: AppCompatActivity() {
         }
 
         var pieData: ArrayList<SliceValue> = ArrayList()
-        pieData.add(SliceValue(pass.toFloat(), Color.GREEN).setLabel("Dikuasai"))
-        pieData.add(SliceValue(fail.toFloat(), Color.RED).setLabel("Dipelajari"))
+        pieData.add(SliceValue(pass.toFloat(), Color.rgb(53, 101, 154)).setLabel("Dikuasai"))
+        pieData.add(SliceValue(fail.toFloat(), Color.rgb(175,56,41)).setLabel("Dipelajari"))
 
-        val pieChartData: PieChartData = PieChartData(pieData)
+        val pieChartData = PieChartData(pieData)
         pieChartData.setHasLabels(true)
         pieChartView.pieChartData = pieChartData
 

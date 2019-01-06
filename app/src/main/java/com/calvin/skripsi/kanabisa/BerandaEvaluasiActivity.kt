@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 
 class BerandaEvaluasiActivity: AppCompatActivity() {
 
@@ -63,8 +64,13 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnHistori.setOnClickListener {
-            startActivity((Intent(this@BerandaEvaluasiActivity,HistoriActivity::class.java)))
+        btnHistori.setOnClickListener{ 
+            if (dbh.cekJumlahEntriEval() == 0) {
+                Toast.makeText(this, "Anda belum pernah melakukan evaluasi!", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                startActivity((Intent(this@BerandaEvaluasiActivity,HistoriActivity::class.java)))
+            }
         }
     }
 

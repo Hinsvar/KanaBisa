@@ -13,6 +13,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             tools:context=".KompetensiActivity"
             android:id="@+id/ScrollViewKompetensi"
+            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

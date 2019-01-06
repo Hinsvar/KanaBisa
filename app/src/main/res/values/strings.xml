@@ -60,7 +60,8 @@
     <string name="judulevaluasi">BERANDA EVALUASI</string>
     <string name="deskripsievaluasi">Dalam proses evaluasi, akan diberikan sebuah karakter hiragana atau katakana secara acak, beserta 4 (empat)
     buah pilihan berupa romanisasi karakter. Pilih salah satu jawaban yang diberikan. Benar atau salahnya pilihan tersebut akan mempengaruhi
-    penilaian penguasaan kana pengguna. Statistik tersebut nantinya dapat dilihat pada halaman kompetensi kana.</string>
+    penilaian penguasaan kana pengguna. Statistik tersebut nantinya dapat dilihat pada halaman kompetensi kana, sedangkan histori evaluasi
+    nantinya dapat dilihat pada daftar histori, yang bisa diakses melalui halaman beranda evaluasi.</string>
     <string name="tombolevaluasi">MULAI EVALUASI</string>
 
 </resources>

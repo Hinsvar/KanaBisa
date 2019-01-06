@@ -10,7 +10,6 @@ import com.calvin.skripsi.kanabisa.model.Evaluasi
 
 open class EvaluasiListAdapter(data: ArrayList<Evaluasi>, context: Context): BaseAdapter() {
 
-    val dbh = DBHelper(context)
     val mInflater: LayoutInflater = LayoutInflater.from(context)
     var locdat = data
 
@@ -29,18 +28,18 @@ open class EvaluasiListAdapter(data: ArrayList<Evaluasi>, context: Context): Bas
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
 
         val view: View?
-        val vh: ListRowHolder
+        val lrh: ListRowHolder
         if (convertView == null) {
             view = mInflater.inflate(R.layout.item_histori, parent, false)
-            vh = ListRowHolder(view)
-            view?.tag = vh
+            lrh = ListRowHolder(view)
+            view?.tag = lrh
         } else {
             view = convertView
-            vh = view.tag as ListRowHolder
+            lrh = view.tag as ListRowHolder
         }
-        vh.eval.text = "Evaluasi " + locdat.get(index = position).id
-        vh.tang.text = locdat.get(index = position).tanggal
-        vh.has.text = "Hasil: " + locdat.get(index = position).benar + "/" + locdat.get(index = position).banyak
+        lrh.eval.text = "Evaluasi " + locdat.get(index = position).id
+        lrh.tang.text = locdat.get(index = position).tanggal
+        lrh.has.text = "Hasil: " + locdat.get(index = position).benar + "/" + locdat.get(index = position).banyak
         return view
     }
 

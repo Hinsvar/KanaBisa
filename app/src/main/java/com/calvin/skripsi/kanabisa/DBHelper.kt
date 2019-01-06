@@ -3,6 +3,7 @@ package com.calvin.skripsi.kanabisa
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
+import android.database.DatabaseUtils
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.calvin.skripsi.kanabisa.model.*
@@ -636,5 +637,12 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
             db.close()
         }
         return arrDetEv
+    }
+
+    fun cekJumlahEntriEval(): Int {
+        val db = this.readableDatabase
+        val count: Long = DatabaseUtils.queryNumEntries(db, "TBL_EVALUASI")
+        db.close()
+        return count.toInt()
     }
 }

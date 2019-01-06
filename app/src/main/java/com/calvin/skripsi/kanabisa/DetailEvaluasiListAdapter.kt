@@ -31,20 +31,20 @@ open class DetailEvaluasiListAdapter(data: ArrayList<DetailEvaluasi>, context: C
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
 
         val view: View?
-        val vh: ListRowHolder
+        val lrh: ListRowHolder
         if (convertView == null) {
             view = mInflater.inflate(R.layout.item_detail_histori, parent, false)
-            vh = ListRowHolder(view)
-            view?.tag = vh
+            lrh = ListRowHolder(view)
+            view?.tag = lrh
         } else {
             view = convertView
-            vh = view.tag as ListRowHolder
+            lrh = view.tag as ListRowHolder
         }
-        vh.kar.text = arrKr[locdat.get(index = position).id_karakter - 1].karakter + " (" +
+        lrh.kar.text = arrKr[locdat.get(index = position).id_karakter - 1].karakter + " (" +
                 arrKr[locdat.get(index = position).id_karakter - 1].roman + ")"
         when (locdat.get(index = position).status) {
-            false -> vh.stat.text = "Salah"
-            true -> vh.stat.text = "Benar"
+            false -> lrh.stat.text = "Salah"
+            true -> lrh.stat.text = "Benar"
         }
         return view
     }

@@ -64,7 +64,7 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnHistori.setOnClickListener{ 
+        btnHistori.setOnClickListener{
             if (dbh.cekJumlahEntriEval() == 0) {
                 Toast.makeText(this, "Anda belum pernah melakukan evaluasi!", Toast.LENGTH_SHORT).show()
             }

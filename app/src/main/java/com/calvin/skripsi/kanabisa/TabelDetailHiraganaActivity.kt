@@ -51,6 +51,7 @@ class TabelDetailHiraganaActivity: AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

@@ -100,6 +100,7 @@ class KarakterActivity: AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

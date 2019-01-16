@@ -43,6 +43,7 @@ class BerandaActivity : AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

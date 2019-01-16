@@ -56,6 +56,7 @@ class DetailHistoriActivity: AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

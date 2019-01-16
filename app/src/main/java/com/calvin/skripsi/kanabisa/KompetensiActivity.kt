@@ -58,6 +58,7 @@ class KompetensiActivity: AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

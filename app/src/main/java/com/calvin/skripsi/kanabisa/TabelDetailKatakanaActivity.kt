@@ -51,6 +51,7 @@ class TabelDetailKatakanaActivity: AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

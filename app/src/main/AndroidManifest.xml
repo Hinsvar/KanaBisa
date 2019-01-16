@@ -13,47 +13,60 @@
         <activity
                 android:name=".SplashActivity"
                 android:label="@string/app_name"
-                android:configChanges="orientation|keyboardHidden|screenSize">
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".BerandaActivity">
+        <activity android:name=".BerandaActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".PengantarActivity">
+        <activity android:name=".PengantarActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".HiraganaActivity">
+        <activity android:name=".HiraganaActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".KatakanaActivity">
+        <activity android:name=".KatakanaActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".KarakterActivity">
+        <activity android:name=".KarakterActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".KompetensiActivity">
+        <activity android:name=".KompetensiActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".BerandaEvaluasiActivity">
+        <activity android:name=".BerandaEvaluasiActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".EvaluasiActivity">
+        <activity android:name=".EvaluasiActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".TabelDetailHiraganaActivity">
+        <activity android:name=".TabelDetailHiraganaActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".TabelDetailKatakanaActivity">
+        <activity android:name=".TabelDetailKatakanaActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".HistoriActivity">
+        <activity android:name=".HistoriActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".DetailHistoriActivity">
+        <activity android:name=".DetailHistoriActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
     </application>

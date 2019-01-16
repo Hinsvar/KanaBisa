@@ -43,6 +43,7 @@ class PengantarActivity : AppCompatActivity() {
             }
 
             mDrawerLayout.closeDrawers()
+            this.finish()
 
             true
         }

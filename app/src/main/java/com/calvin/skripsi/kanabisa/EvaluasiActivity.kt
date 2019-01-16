@@ -90,7 +90,6 @@ class EvaluasiActivity: AppCompatActivity() {
                 Toast.makeText(this, "Belum ada jawaban yang dipilih!", Toast.LENGTH_SHORT).show()
             }
             else {
-                val radCheckId = radioG.checkedRadioButtonId
                 for (i in 0 until radioG.childCount) {
                     val radBut: View = radioG.getChildAt(i)
                     if (radBut is RadioButton) {

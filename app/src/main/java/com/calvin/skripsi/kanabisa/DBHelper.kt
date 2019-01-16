@@ -520,7 +520,7 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
     fun mulaiEvaluasi(bnr: Int) {
         val db = this.writableDatabase
         val dateNow: Date = Calendar.getInstance().time
-        val sdf = SimpleDateFormat("DD-MM-YYYY HH:mm:ss")
+        val sdf = SimpleDateFormat("DD-MM-yyyy HH:mm:ss")
         val dateStr = sdf.format(dateNow)
         val cv = ContentValues()
         try {

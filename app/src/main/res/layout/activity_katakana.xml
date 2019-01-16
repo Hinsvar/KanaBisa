@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
-    <!-- Tabel hiragana -->
+    <!-- Tabel katakana -->
 
     <ScrollView android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -27,19 +27,19 @@
                 <!-- a-i-u-e-o -->
 
                 <TableRow
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_a"
                                 android:src="@drawable/k_dasar_a"
                         />
@@ -56,14 +56,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_i"
                                 android:src="@drawable/k_dasar_i"
                         />
@@ -80,14 +79,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_u"
                                 android:src="@drawable/k_dasar_u"
                         />
@@ -104,14 +102,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_e"
                                 android:src="@drawable/k_dasar_e"
                         />
@@ -128,14 +125,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_o"
                                 android:src="@drawable/k_dasar_o"
                         />
@@ -155,19 +151,19 @@
                 <!-- ka-ki-ku-ke-ko -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ka"
                                 android:src="@drawable/k_dasar_ka"
                         />
@@ -184,14 +180,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ki"
                                 android:src="@drawable/k_dasar_ki"
                         />
@@ -208,14 +203,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ku"
                                 android:src="@drawable/k_dasar_ku"
                         />
@@ -232,14 +226,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ke"
                                 android:src="@drawable/k_dasar_ke"
                         />
@@ -256,14 +249,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ko"
                                 android:src="@drawable/k_dasar_ko"
                         />
@@ -283,19 +275,19 @@
                 <!-- sa-shi-su-se-so -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_sa"
                                 android:src="@drawable/k_dasar_sa"
                         />
@@ -312,14 +304,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_shi"
                                 android:src="@drawable/k_dasar_shi"
                         />
@@ -336,14 +327,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_su"
                                 android:src="@drawable/k_dasar_su"
                         />
@@ -360,14 +350,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_se"
                                 android:src="@drawable/k_dasar_se"
                         />
@@ -384,14 +373,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_so"
                                 android:src="@drawable/k_dasar_so"
                         />
@@ -411,19 +399,19 @@
                 <!-- ta-chi-tsu-te-to -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ta"
                                 android:src="@drawable/k_dasar_ta"
                         />
@@ -440,14 +428,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_chi"
                                 android:src="@drawable/k_dasar_chi"
                         />
@@ -464,14 +451,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_tsu"
                                 android:src="@drawable/k_dasar_tsu"
                         />
@@ -488,14 +474,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_te"
                                 android:src="@drawable/k_dasar_te"
                         />
@@ -512,14 +497,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_to"
                                 android:src="@drawable/k_dasar_to"
                         />
@@ -539,19 +523,19 @@
                 <!-- na-ni-nu-ne-no -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_na"
                                 android:src="@drawable/k_dasar_na"
                         />
@@ -568,14 +552,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ni"
                                 android:src="@drawable/k_dasar_ni"
                         />
@@ -592,14 +575,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_nu"
                                 android:src="@drawable/k_dasar_nu"
                         />
@@ -616,14 +598,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ne"
                                 android:src="@drawable/k_dasar_ne"
                         />
@@ -640,14 +621,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_no"
                                 android:src="@drawable/k_dasar_no"
                         />
@@ -667,19 +647,19 @@
                 <!-- ha-hi-fu-he-ho -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ha"
                                 android:src="@drawable/k_dasar_ha"
                         />
@@ -696,14 +676,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_hi"
                                 android:src="@drawable/k_dasar_hi"
                         />
@@ -720,14 +699,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_fu"
                                 android:src="@drawable/k_dasar_fu"
                         />
@@ -744,14 +722,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_he"
                                 android:src="@drawable/k_dasar_he"
                         />
@@ -768,14 +745,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ho"
                                 android:src="@drawable/k_dasar_ho"
                         />
@@ -795,19 +771,19 @@
                 <!-- ma-mi-mu-me-mo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ma"
                                 android:src="@drawable/k_dasar_ma"
                         />
@@ -824,14 +800,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_mi"
                                 android:src="@drawable/k_dasar_mi"
                         />
@@ -848,14 +823,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_mu"
                                 android:src="@drawable/k_dasar_mu"
                         />
@@ -872,14 +846,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_me"
                                 android:src="@drawable/k_dasar_me"
                         />
@@ -896,14 +869,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_mo"
                                 android:src="@drawable/k_dasar_mo"
                         />
@@ -923,19 +895,19 @@
                 <!-- ya-yu-yo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ya"
                                 android:src="@drawable/k_dasar_ya"
                         />
@@ -952,14 +924,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_yu"
                                 android:src="@drawable/k_dasar_yu"
                         />
@@ -976,14 +947,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_yo"
                                 android:src="@drawable/k_dasar_yo"
                         />
@@ -1002,19 +972,19 @@
                 <!-- ra-ri-ru-re-ro -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ra"
                                 android:src="@drawable/k_dasar_ra"
                         />
@@ -1031,14 +1001,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ri"
                                 android:src="@drawable/k_dasar_ri"
                         />
@@ -1055,14 +1024,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ru"
                                 android:src="@drawable/k_dasar_ru"
                         />
@@ -1079,14 +1047,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_re"
                                 android:src="@drawable/k_dasar_re"
                         />
@@ -1103,14 +1070,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ro"
                                 android:src="@drawable/k_dasar_ro"
                         />
@@ -1130,19 +1096,19 @@
                 <!-- wa-wo-n -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_wa"
                                 android:src="@drawable/k_dasar_wa"
                         />
@@ -1159,14 +1125,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_wo"
                                 android:src="@drawable/k_dasar_wo"
                         />
@@ -1183,14 +1148,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_n"
                                 android:src="@drawable/k_dasar_n"
                         />
@@ -1209,19 +1173,19 @@
                 <!-- ga-gi-gu-ge-go -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ga"
                                 android:src="@drawable/k_dasar_ga"
                         />
@@ -1238,14 +1202,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_gi"
                                 android:src="@drawable/k_dasar_gi"
                         />
@@ -1262,14 +1225,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_gu"
                                 android:src="@drawable/k_dasar_gu"
                         />
@@ -1286,14 +1248,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ge"
                                 android:src="@drawable/k_dasar_ge"
                         />
@@ -1310,14 +1271,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_go"
                                 android:src="@drawable/k_dasar_go"
                         />
@@ -1337,19 +1297,19 @@
                 <!-- za-ji (zi)-zu-ze-zo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_za"
                                 android:src="@drawable/k_dasar_za"
                         />
@@ -1366,14 +1326,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ji"
                                 android:src="@drawable/k_dasar_ji"
                         />
@@ -1390,14 +1349,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_zu"
                                 android:src="@drawable/k_dasar_zu"
                         />
@@ -1414,14 +1372,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ze"
                                 android:src="@drawable/k_dasar_ze"
                         />
@@ -1438,14 +1395,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_zo"
                                 android:src="@drawable/k_dasar_zo"
                         />
@@ -1465,19 +1421,19 @@
                 <!-- da-ji (di)-zu (du)-de-do -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_da"
                                 android:src="@drawable/k_dasar_da"
                         />
@@ -1494,14 +1450,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_di"
                                 android:src="@drawable/k_dasar_di"
                         />
@@ -1518,14 +1473,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_du"
                                 android:src="@drawable/k_dasar_du"
                         />
@@ -1542,14 +1496,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_de"
                                 android:src="@drawable/k_dasar_de"
                         />
@@ -1566,14 +1519,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_do"
                                 android:src="@drawable/k_dasar_do"
                         />
@@ -1593,19 +1545,19 @@
                 <!-- ba-bi-bu-be-bo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ba"
                                 android:src="@drawable/k_dasar_ba"
                         />
@@ -1622,14 +1574,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_bi"
                                 android:src="@drawable/k_dasar_bi"
                         />
@@ -1646,14 +1597,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_bu"
                                 android:src="@drawable/k_dasar_bu"
                         />
@@ -1670,14 +1620,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_be"
                                 android:src="@drawable/k_dasar_be"
                         />
@@ -1694,14 +1643,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_bo"
                                 android:src="@drawable/k_dasar_bo"
                         />
@@ -1721,19 +1669,19 @@
                 <!-- pa-pi-pu-pe-po -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pa"
                                 android:src="@drawable/k_dasar_pa"
                         />
@@ -1750,14 +1698,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pi"
                                 android:src="@drawable/k_dasar_pi"
                         />
@@ -1774,14 +1721,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pu"
                                 android:src="@drawable/k_dasar_pu"
                         />
@@ -1798,14 +1744,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pe"
                                 android:src="@drawable/k_dasar_pe"
                         />
@@ -1822,14 +1767,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
                             android:layout_weight="0.2">
 
                         <ImageView
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_po"
                                 android:src="@drawable/k_dasar_po"
                         />
@@ -1849,19 +1793,19 @@
                 <!-- kya-kyu-kyo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_kya"
                                 android:src="@drawable/k_dasar_kya"
                         />
@@ -1878,14 +1822,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_kyu"
                                 android:src="@drawable/k_dasar_kyu"
                         />
@@ -1902,14 +1845,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_kyo"
                                 android:src="@drawable/k_dasar_kyo"
                         />
@@ -1928,19 +1870,19 @@
                 <!-- sha-shu-sho -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_sha"
                                 android:src="@drawable/k_dasar_sha"
                         />
@@ -1957,14 +1899,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_shu"
                                 android:src="@drawable/k_dasar_shu"
                         />
@@ -1981,14 +1922,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_sho"
                                 android:src="@drawable/k_dasar_sho"
                         />
@@ -2007,19 +1947,20 @@
                 <!-- cha-chu-cho -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_cha"
                                 android:src="@drawable/k_dasar_cha"
                         />
@@ -2035,15 +1976,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_chu"
                                 android:src="@drawable/k_dasar_chu"
                         />
@@ -2060,14 +2001,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_cho"
                                 android:src="@drawable/k_dasar_cho"
                         />
@@ -2089,16 +2029,17 @@
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_nya"
                                 android:src="@drawable/k_dasar_nya"
                         />
@@ -2115,14 +2056,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_nyu"
                                 android:src="@drawable/k_dasar_nyu"
                         />
@@ -2138,15 +2078,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_nyo"
                                 android:src="@drawable/k_dasar_nyo"
                         />
@@ -2168,16 +2108,16 @@
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_hya"
                                 android:src="@drawable/k_dasar_hya"
                         />
@@ -2194,14 +2134,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_hyu"
                                 android:src="@drawable/k_dasar_hyu"
                         />
@@ -2218,14 +2157,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_hyo"
                                 android:src="@drawable/k_dasar_hyo"
                         />
@@ -2244,19 +2182,20 @@
                 <!-- mya-myu-myo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_mya"
                                 android:src="@drawable/k_dasar_mya"
                         />
@@ -2273,14 +2212,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_myu"
                                 android:src="@drawable/k_dasar_myu"
                         />
@@ -2297,14 +2235,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_myo"
                                 android:src="@drawable/k_dasar_myo"
                         />
@@ -2323,19 +2260,19 @@
                 <!-- rya-ryu-ryo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_rya"
                                 android:src="@drawable/k_dasar_rya"
                         />
@@ -2352,14 +2289,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ryu"
                                 android:src="@drawable/k_dasar_ryu"
                         />
@@ -2376,14 +2312,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ryo"
                                 android:src="@drawable/k_dasar_ryo"
                         />
@@ -2402,19 +2337,19 @@
                 <!-- gya-gyu-gyo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_gya"
                                 android:src="@drawable/k_dasar_gya"
                         />
@@ -2431,14 +2366,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_gyu"
                                 android:src="@drawable/k_dasar_gyu"
                         />
@@ -2454,15 +2388,15 @@
                     </LinearLayout>
 
                     <LinearLayout
+
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_gyo"
                                 android:src="@drawable/k_dasar_gyo"
                         />
@@ -2481,19 +2415,19 @@
                 <!-- ja-ju-jo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ja"
                                 android:src="@drawable/k_dasar_ja"
                         />
@@ -2510,14 +2444,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_ju"
                                 android:src="@drawable/k_dasar_ju"
                         />
@@ -2534,14 +2467,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_jo"
                                 android:src="@drawable/k_dasar_jo"
                         />
@@ -2560,19 +2492,19 @@
                 <!-- bya-byu-byo -->
 
                 <TableRow
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_bya"
                                 android:src="@drawable/k_dasar_bya"
                         />
@@ -2589,14 +2521,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_byu"
                                 android:src="@drawable/k_dasar_byu"
                         />
@@ -2613,14 +2544,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_byo"
                                 android:src="@drawable/k_dasar_byo"
                         />
@@ -2642,16 +2572,16 @@
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1">
+
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pya"
                                 android:src="@drawable/k_dasar_pya"
                         />
@@ -2668,14 +2598,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pyu"
                                 android:src="@drawable/k_dasar_pyu"
                         />
@@ -2692,14 +2621,13 @@
 
                     <LinearLayout
                             android:orientation="vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="128dp"
-                            android:layout_weight="0.2">
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33">
 
                         <ImageView
-                                android:layout_weight="0.33"
                                 android:layout_width="wrap_content"
-                                android:layout_height="0dp"
+                                android:layout_height="96dp"
                                 android:id="@+id/img_table_k_pyo"
                                 android:src="@drawable/k_dasar_pyo"
                         />

@@ -8,7 +8,9 @@ import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.text.Layout.JUSTIFICATION_MODE_INTER_WORD
 import android.view.MenuItem
+import android.widget.TextView
 
 class PengantarActivity : AppCompatActivity() {
 
@@ -21,6 +23,20 @@ class PengantarActivity : AppCompatActivity() {
         this.title = "Pengantar"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
+
+        var tap: TextView = findViewById(R.id.textAwalPengantar)
+        var tph1: TextView = findViewById(R.id.textPengantarHiragana1)
+        var tph2: TextView = findViewById(R.id.textPengantarHiragana2)
+        var tpk: TextView = findViewById(R.id.textPengantarKatakana)
+        var tpf1: TextView = findViewById(R.id.textPengantarFitur1)
+        var tpf2: TextView = findViewById(R.id.textPengantarFitur2)
+
+        tap.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tph1.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tph2.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tpk.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tpf1.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tpf2.justificationMode = JUSTIFICATION_MODE_INTER_WORD
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)

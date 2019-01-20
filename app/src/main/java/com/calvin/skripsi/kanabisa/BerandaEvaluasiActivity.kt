@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.text.Layout.JUSTIFICATION_MODE_INTER_WORD
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
@@ -27,7 +28,10 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
         var btnEval: Button = findViewById(R.id.buttonEvaluasi)
-        val btnHistori: Button = findViewById(R.id.buttonHistori)
+        var btnHistori: Button = findViewById(R.id.buttonHistori)
+        var txtBerandaEvaluasi: TextView = findViewById(R.id.textBerandaEvaluasi)
+
+        txtBerandaEvaluasi.justificationMode = JUSTIFICATION_MODE_INTER_WORD
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)

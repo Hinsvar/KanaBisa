@@ -45,8 +45,8 @@ class KatakanaActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@KatakanaActivity, BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@KatakanaActivity, PengantarActivity::class.java))
+                R.id.optionDaftar -> startActivity(Intent(this@KatakanaActivity,BunyiActivity::class.java))
                 R.id.optionHiragana -> startActivity(Intent(this@KatakanaActivity, HiraganaActivity::class.java))
-                //3 -> tabel katakana
                 R.id.optionKompetensi -> startActivity(Intent(this@KatakanaActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@KatakanaActivity,BerandaEvaluasiActivity::class.java))
             }

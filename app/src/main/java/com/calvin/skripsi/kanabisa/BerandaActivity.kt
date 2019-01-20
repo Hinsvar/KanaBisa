@@ -34,8 +34,8 @@ class BerandaActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
 
             when (menuItem.itemId) {
-                //0 -> beranda
                 R.id.optionPengantar -> startActivity(Intent(this@BerandaActivity,PengantarActivity::class.java))
+                R.id.optionDaftar -> startActivity(Intent(this@BerandaActivity,BunyiActivity::class.java))
                 R.id.optionHiragana -> startActivity(Intent(this@BerandaActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@BerandaActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@BerandaActivity,KompetensiActivity::class.java))

@@ -8,6 +8,9 @@
                 android:id="@+id/optionPengantar"
                 android:title="@string/optpengantar" />
         <item
+                android:id="@+id/optionDaftar"
+                android:title="@string/optdaftar" />
+        <item
                 android:id="@+id/optionHiragana"
                 android:title="@string/opthiragana" />
         <item

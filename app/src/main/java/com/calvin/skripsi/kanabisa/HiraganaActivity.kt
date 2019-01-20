@@ -45,7 +45,7 @@ class HiraganaActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@HiraganaActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@HiraganaActivity,PengantarActivity::class.java))
-                //2 -> tabel hiragana
+                R.id.optionDaftar -> startActivity(Intent(this@HiraganaActivity,BunyiActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@HiraganaActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@HiraganaActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@HiraganaActivity,BerandaEvaluasiActivity::class.java))

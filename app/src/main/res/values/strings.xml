@@ -11,6 +11,7 @@
     <!-- menu drawer -->
     <string name="optberanda">Beranda</string>
     <string name="optpengantar">Pengantar</string>
+    <string name="optdaftar">Daftar kana</string>
     <string name="opthiragana">Tabel hiragana</string>
     <string name="optkatakana">Tabel katakana</string>
     <string name="optkompetensi">Kompetensi kana</string>
@@ -63,5 +64,6 @@
     penilaian penguasaan kana pengguna. Statistik tersebut nantinya dapat dilihat pada halaman kompetensi kana, sedangkan histori evaluasi
     nantinya dapat dilihat pada daftar histori, yang bisa diakses melalui halaman beranda evaluasi.</string>
     <string name="tombolevaluasi">MULAI EVALUASI</string>
+    <string name="tombolhistori">LIHAT HISTORI EVALUASI</string>
 
 </resources>

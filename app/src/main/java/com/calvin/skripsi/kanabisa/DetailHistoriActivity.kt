@@ -49,6 +49,7 @@ class DetailHistoriActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@DetailHistoriActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@DetailHistoriActivity,PengantarActivity::class.java))
+                R.id.optionDaftar -> startActivity(Intent(this@DetailHistoriActivity,BunyiActivity::class.java))
                 R.id.optionHiragana -> startActivity(Intent(this@DetailHistoriActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@DetailHistoriActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@DetailHistoriActivity,KompetensiActivity::class.java))
@@ -61,7 +62,7 @@ class DetailHistoriActivity: AppCompatActivity() {
             true
         }
 
-        var historiAdapter = DetailEvaluasiListAdapter(arrDetEvIdEval, this)
+        val historiAdapter = DetailEvaluasiListAdapter(arrDetEvIdEval, this)
         detHistoriLV.adapter = historiAdapter
     }
 

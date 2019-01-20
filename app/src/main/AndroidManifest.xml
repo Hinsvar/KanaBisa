@@ -29,6 +29,14 @@
                   android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".BunyiActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".HurufActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
         <activity android:name=".HiraganaActivity"
                   android:screenOrientation="portrait">
         </activity>

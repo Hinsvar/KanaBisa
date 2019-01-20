@@ -133,6 +133,8 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
         arrKarakter.add(Karakter(45, "を", "o (wo)", 1, 1, "wo", 0, 0, 0))
         arrKarakter.add(Karakter(46, "ん", "n", 1, 1, "n", 0, 0, 0))
 
+        // DAKUON
+
         // ga-gi-gu-ge-go
         arrKarakter.add(Karakter(47, "が", "ga", 1, 1, "ga", 0, 0, 0))
         arrKarakter.add(Karakter(48, "ぎ", "gi", 1, 1, "gi", 0, 0, 0))
@@ -294,6 +296,8 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, "DB_KANABISA", nul
         arrKarakter.add(Karakter(148, "ワ", "wa", 2, 1, "wa", 0, 0, 0))
         arrKarakter.add(Karakter(149, "ヲ", "o (wo)", 2, 1, "wo", 0, 0, 0))
         arrKarakter.add(Karakter(150, "ン", "n", 2, 1, "n", 0, 0, 0))
+
+        // DAKUON
 
         // ga-gi-gu-ge-go
         arrKarakter.add(Karakter(151, "ガ", "ga", 2, 1, "ga", 0, 0, 0))

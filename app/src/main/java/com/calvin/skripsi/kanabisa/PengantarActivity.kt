@@ -51,7 +51,7 @@ class PengantarActivity : AppCompatActivity() {
 
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@PengantarActivity,BerandaActivity::class.java))
-                //1 -> pengantar
+                R.id.optionDaftar -> startActivity(Intent(this@PengantarActivity,BunyiActivity::class.java))
                 R.id.optionHiragana -> startActivity(Intent(this@PengantarActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@PengantarActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@PengantarActivity,KompetensiActivity::class.java))

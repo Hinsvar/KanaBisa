@@ -10,23 +10,29 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
 import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.calvin.skripsi.kanabisa.model.Evaluasi
 
-class HistoriActivity: AppCompatActivity() {
+class BunyiActivity: AppCompatActivity() {
 
     private lateinit var mDrawerLayout: DrawerLayout
-    val dbh = DBHelper(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_histori)
+        setContentView(R.layout.activity_bunyi)
 
-        this.title = "Histori"
+        this.title = "Daftar Kana"
 
         mDrawerLayout = findViewById(R.id.drawer_layout)
-        val arrEv: ArrayList<Evaluasi> = dbh.tabelEvaluasi()
-        val historiLV: ListView = findViewById(R.id.listHistori)
+        val bunyiLV: ListView = findViewById(R.id.listBunyi)
+        val bunyi = listOf("Hiragana - Seion", "Hiragana - Dakuon", "Hiragana - Yoon",
+                            "Katakana - Seion", "Katakana - Dakuon", "Katakana - Yoon")
+        val adapter = ArrayAdapter<String>(
+            this,
+            android.R.layout.simple_list_item_1,
+            bunyi
+        )
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -40,13 +46,12 @@ class HistoriActivity: AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
 
             when (menuItem.itemId) {
-                R.id.optionBeranda -> startActivity(Intent(this@HistoriActivity,BerandaActivity::class.java))
-                R.id.optionPengantar -> startActivity(Intent(this@HistoriActivity,PengantarActivity::class.java))
-                R.id.optionDaftar -> startActivity(Intent(this@HistoriActivity,BunyiActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@HistoriActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@HistoriActivity,KatakanaActivity::class.java))
-                R.id.optionKompetensi -> startActivity(Intent(this@HistoriActivity,KompetensiActivity::class.java))
-                R.id.optionEvaluasi -> startActivity(Intent(this@HistoriActivity,BerandaEvaluasiActivity::class.java))
+                R.id.optionBeranda -> startActivity(Intent(this@BunyiActivity,BerandaActivity::class.java))
+                R.id.optionPengantar -> startActivity(Intent(this@BunyiActivity,PengantarActivity::class.java))
+                R.id.optionHiragana -> startActivity(Intent(this@BunyiActivity,HiraganaActivity::class.java))
+                R.id.optionKatakana -> startActivity(Intent(this@BunyiActivity,KatakanaActivity::class.java))
+                R.id.optionKompetensi -> startActivity(Intent(this@BunyiActivity,KompetensiActivity::class.java))
+                R.id.optionEvaluasi -> startActivity(Intent(this@BunyiActivity,BerandaEvaluasiActivity::class.java))
             }
 
             mDrawerLayout.closeDrawers()
@@ -55,13 +60,14 @@ class HistoriActivity: AppCompatActivity() {
             true
         }
 
-        val historiAdapter = EvaluasiListAdapter(arrEv, this)
-        historiLV.adapter = historiAdapter
-
-        historiLV.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            val item = parent.getItemAtPosition(position) as Evaluasi
-            val intent = Intent(this@HistoriActivity,DetailHistoriActivity::class.java)
-            intent.putExtra("id", item.id)
+        bunyiLV.adapter = adapter
+        bunyiLV.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+            val item = parent.getItemAtPosition(position) as String
+            val intent = Intent(this@BunyiActivity,HurufActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("jenis",item)
+            bundle.putInt("pos", position)
+            intent.putExtras(bundle)
             startActivity(intent)
         }
     }

@@ -93,6 +93,7 @@ class KarakterActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@KarakterActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@KarakterActivity,PengantarActivity::class.java))
+                R.id.optionDaftar -> startActivity(Intent(this@KarakterActivity,BunyiActivity::class.java))
                 R.id.optionHiragana -> startActivity(Intent(this@KarakterActivity,HiraganaActivity::class.java))
                 R.id.optionKatakana -> startActivity(Intent(this@KarakterActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@KarakterActivity,KompetensiActivity::class.java))

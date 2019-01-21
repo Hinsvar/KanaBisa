@@ -60,14 +60,20 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
         }
 
         btnEval.setOnClickListener {
-            val intent = Intent(this@BerandaEvaluasiActivity, EvaluasiActivity::class.java)
-            val bundle = Bundle()
-            bundle.putBoolean("inProg", false)
-            bundle.putInt("id",maxEvalId)
-            bundle.putInt("banyak",0)
-            bundle.putInt("benar",0)
-            intent.putExtras(bundle)
-            startActivity(intent)
+            if (dbh.cekJumlahKarakterDipelajari() < 20) {
+                Toast.makeText(this, "Anda baru mempelajari " + dbh.cekJumlahKarakterDipelajari().toString() +
+                        " dari 20 karakter yang dipersyaratkan!", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                val intent = Intent(this@BerandaEvaluasiActivity, EvaluasiActivity::class.java)
+                val bundle = Bundle()
+                bundle.putBoolean("inProg", false)
+                bundle.putInt("id", maxEvalId)
+                bundle.putInt("banyak", 0)
+                bundle.putInt("benar", 0)
+                intent.putExtras(bundle)
+                startActivity(intent)
+            }
         }
 
         btnHistori.setOnClickListener{

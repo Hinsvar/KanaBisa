@@ -21,16 +21,21 @@ class EvaluasiActivity: AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         val dbh = DBHelper(this)
         val arrKr: ArrayList<Karakter> = dbh.tabelKarakter()
-        val randNum = Random.nextInt(1,208)
+        var randNum = Random.nextInt(1,208)
+
+        while (!arrKr[randNum].status) {
+            randNum = Random.nextInt(1,208)
+        }
+
         val inProgress: Boolean = intent.extras.getBoolean("inProg")
         var idEval = intent.extras.getInt("id")
         var evalBanyak = intent.extras.getInt("banyak")
         var evalBenar = intent.extras.getInt("benar")
 
-        var gambarKarakter: ImageView = findViewById(R.id.gambarEval)
-        var radioG: RadioGroup = findViewById(R.id.radGroup)
-        var btnJawab: Button = findViewById(R.id.buttonJawab)
-        var btnKeluar: Button = findViewById(R.id.buttonKeluar)
+        val gambarKarakter: ImageView = findViewById(R.id.gambarEval)
+        val radioG: RadioGroup = findViewById(R.id.radGroup)
+        val btnJawab: Button = findViewById(R.id.buttonJawab)
+        val btnKeluar: Button = findViewById(R.id.buttonKeluar)
         var kr: Karakter = Karakter(
             arrKr[randNum].id,
             arrKr[randNum].karakter,
@@ -40,7 +45,8 @@ class EvaluasiActivity: AppCompatActivity() {
             arrKr[randNum].gambar,
             arrKr[randNum].eval_banyak,
             arrKr[randNum].eval_benar,
-            arrKr[randNum].eval_nilai)
+            arrKr[randNum].eval_nilai,
+            arrKr[randNum].status)
         var nama_gambar = ""
         val truerom = kr.roman
 

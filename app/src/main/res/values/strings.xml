@@ -62,7 +62,8 @@
     <string name="deskripsievaluasi">Dalam proses evaluasi, akan diberikan sebuah karakter hiragana atau katakana secara acak, beserta 4 (empat)
     buah pilihan berupa romanisasi karakter. Pilih salah satu jawaban yang diberikan. Benar atau salahnya pilihan tersebut akan mempengaruhi
     penilaian penguasaan kana pengguna. Statistik tersebut nantinya dapat dilihat pada halaman kompetensi kana, sedangkan histori evaluasi
-    nantinya dapat dilihat pada daftar histori, yang bisa diakses melalui halaman beranda evaluasi.</string>
+    nantinya dapat dilihat pada daftar histori, yang bisa diakses melalui halaman beranda evaluasi. Untuk melakukan evaluasi, pelajarilah
+    setidaknya 20 buah karakter hiragana maupun katakana terlebih dahulu.</string>
     <string name="tombolevaluasi">MULAI EVALUASI</string>
     <string name="tombolhistori">LIHAT HISTORI EVALUASI</string>
 

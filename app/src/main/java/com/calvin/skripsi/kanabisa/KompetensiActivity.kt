@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
+import android.view.View
 import android.widget.*
 import com.calvin.skripsi.kanabisa.model.Karakter
 import lecho.lib.hellocharts.model.PieChartData
@@ -63,22 +64,30 @@ class KompetensiActivity: AppCompatActivity() {
             true
         }
 
-        for (i in arrKr.indices) {
-            if(arrKr[i].eval_nilai >= batasNilai && arrKr[i].eval_banyak >= batasBanyak) {
-                pass++
-            }
-            else {
-                fail++
-            }
+        if(dbh.cekJumlahKarakterDipelajari() == 0) {
+            pieChartView.visibility = View.GONE
         }
+        else {
+            for (i in arrKr.indices) {
+                if(arrKr[i].status) {
+                    if(arrKr[i].eval_nilai >= batasNilai && arrKr[i].eval_banyak >= batasBanyak) {
+                        pass++
+                    }
+                    else {
+                        fail++
+                    }
+                }
+            }
 
-        var pieData: ArrayList<SliceValue> = ArrayList()
-        pieData.add(SliceValue(pass.toFloat(), Color.rgb(53, 101, 154)).setLabel("Dikuasai"))
-        pieData.add(SliceValue(fail.toFloat(), Color.rgb(175,56,41)).setLabel("Dipelajari"))
 
-        val pieChartData = PieChartData(pieData)
-        pieChartData.setHasLabels(true)
-        pieChartView.pieChartData = pieChartData
+            var pieData: ArrayList<SliceValue> = ArrayList()
+            pieData.add(SliceValue(pass.toFloat(), Color.rgb(53, 101, 154)).setLabel("Dikuasai"))
+            pieData.add(SliceValue(fail.toFloat(), Color.rgb(175,56,41)).setLabel("Dipelajari"))
+
+            val pieChartData = PieChartData(pieData)
+            pieChartData.setHasLabels(true)
+            pieChartView.pieChartData = pieChartData
+        }
 
         val textDikuasai: TextView = findViewById(R.id.textDikuasai)
         val textDipelajari: TextView = findViewById(R.id.textDipelajari)

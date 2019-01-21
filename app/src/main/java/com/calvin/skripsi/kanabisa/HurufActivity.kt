@@ -95,6 +95,11 @@ class HurufActivity: AppCompatActivity() {
             bundle.putInt("jenis",item.id_jenis)
             bundle.putInt("bunyi",item.id_bunyi)
             intent.putExtras(bundle)
+
+            if(!item.status) {
+                dbh.setKarakterDipelajari(item.id)
+            }
+
             startActivity(intent)
         }
     }

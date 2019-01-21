@@ -44,8 +44,6 @@ class TabelDetailKatakanaActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@TabelDetailKatakanaActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@TabelDetailKatakanaActivity,PengantarActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@TabelDetailKatakanaActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@TabelDetailKatakanaActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@TabelDetailKatakanaActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@TabelDetailKatakanaActivity,BerandaEvaluasiActivity::class.java))
             }

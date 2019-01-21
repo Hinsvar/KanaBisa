@@ -56,7 +56,8 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:fontFamily="serif"/>
+                    android:fontFamily="serif"
+                    android:justificationMode="inter_word"/>
             <TextView
                     android:id="@+id/textJudulHiragana"
                     android:layout_width="wrap_content"
@@ -132,10 +133,33 @@
                     android:layout_marginRight="20dp"
                     android:fontFamily="serif"/>
             <TextView
-                    android:id="@+id/textJudulFitur"
+                    android:id="@+id/textJudulBunyi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textPengantarKatakana"
+                    android:text="@string/judulbunyi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                    android:id="@+id/textPengantarBunyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textJudulBunyi"
+                    android:text="@string/teksbunyi"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="serif"/>
+            <TextView
+                    android:id="@+id/textJudulFitur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPengantarBunyi"
                     android:text="@string/judulfitur"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="50dp"

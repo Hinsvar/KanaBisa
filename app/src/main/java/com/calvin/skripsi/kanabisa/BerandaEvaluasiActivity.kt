@@ -48,8 +48,6 @@ class BerandaEvaluasiActivity: AppCompatActivity() {
                 R.id.optionBeranda -> startActivity(Intent(this@BerandaEvaluasiActivity, BerandaActivity::class.java))
                 R.id.optionDaftar -> startActivity(Intent(this@BerandaEvaluasiActivity,BunyiActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@BerandaEvaluasiActivity, PengantarActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@BerandaEvaluasiActivity, HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@BerandaEvaluasiActivity, KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@BerandaEvaluasiActivity, KompetensiActivity::class.java))
             }
 

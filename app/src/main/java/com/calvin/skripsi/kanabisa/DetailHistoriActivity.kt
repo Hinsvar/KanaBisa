@@ -50,8 +50,6 @@ class DetailHistoriActivity: AppCompatActivity() {
                 R.id.optionBeranda -> startActivity(Intent(this@DetailHistoriActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@DetailHistoriActivity,PengantarActivity::class.java))
                 R.id.optionDaftar -> startActivity(Intent(this@DetailHistoriActivity,BunyiActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@DetailHistoriActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@DetailHistoriActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@DetailHistoriActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@DetailHistoriActivity,BerandaEvaluasiActivity::class.java))
             }

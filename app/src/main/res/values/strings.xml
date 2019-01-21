@@ -12,8 +12,6 @@
     <string name="optberanda">Beranda</string>
     <string name="optpengantar">Pengantar</string>
     <string name="optdaftar">Daftar kana</string>
-    <string name="opthiragana">Tabel hiragana</string>
-    <string name="optkatakana">Tabel katakana</string>
     <string name="optkompetensi">Kompetensi kana</string>
     <string name="optevaluasi">Evaluasi kana</string>
 
@@ -42,6 +40,12 @@
         Dalam penulisannya, goresan katakana bersifat lebih tajam, lurus, dan tegas dibandingkan dengan hiragana yang bersifat melengkung.
         Pemakaian katakana yang utama adalah sebagai aksara yang dipakai dalam menuliskan kata serapan dari bahasa di luar Jepang (yang bukan
         merupakan bahasa Mandarin), sesuai dengan pengucapan kata bersangkutan pada bahasa aslinya</string>
+
+    <!-- pengantar bunyi -->
+    <string name="judulbunyi">BUNYI</string>
+    <string name="teksbunyi">Dalam kana terdapat tiga macam bunyi, yaitu seion, dakuon, dan yoon. Seion merupakan bunyi dasar dari karakter kana,
+    dakuon merupakan bunyi dasar dengan penambahan aksen pada penulisan karakternya, dan yoon merupakan bunyi yang memiliki ekstensi dari huruf tertentu
+    dengan "-i" sebagai huruf vokalnya diikuti dengan "ya", "yu", atau "yo".</string>
 
     <!-- pengantar panduan -->
     <string name="judulfitur">FUNGSIONALITAS APLIKASI</string>

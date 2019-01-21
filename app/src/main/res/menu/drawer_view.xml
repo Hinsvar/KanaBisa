@@ -11,12 +11,6 @@
                 android:id="@+id/optionDaftar"
                 android:title="@string/optdaftar" />
         <item
-                android:id="@+id/optionHiragana"
-                android:title="@string/opthiragana" />
-        <item
-                android:id="@+id/optionKatakana"
-                android:title="@string/optkatakana" />
-        <item
                 android:id="@+id/optionKompetensi"
                 android:title="@string/optkompetensi" />
         <item

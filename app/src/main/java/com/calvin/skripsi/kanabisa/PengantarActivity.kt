@@ -28,6 +28,7 @@ class PengantarActivity : AppCompatActivity() {
         var tph1: TextView = findViewById(R.id.textPengantarHiragana1)
         var tph2: TextView = findViewById(R.id.textPengantarHiragana2)
         var tpk: TextView = findViewById(R.id.textPengantarKatakana)
+        var tpb: TextView = findViewById(R.id.textPengantarBunyi)
         var tpf1: TextView = findViewById(R.id.textPengantarFitur1)
         var tpf2: TextView = findViewById(R.id.textPengantarFitur2)
 
@@ -35,6 +36,7 @@ class PengantarActivity : AppCompatActivity() {
         tph1.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         tph2.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         tpk.justificationMode = JUSTIFICATION_MODE_INTER_WORD
+        tpb.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         tpf1.justificationMode = JUSTIFICATION_MODE_INTER_WORD
         tpf2.justificationMode = JUSTIFICATION_MODE_INTER_WORD
 
@@ -52,8 +54,6 @@ class PengantarActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@PengantarActivity,BerandaActivity::class.java))
                 R.id.optionDaftar -> startActivity(Intent(this@PengantarActivity,BunyiActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@PengantarActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@PengantarActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@PengantarActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@PengantarActivity,BerandaEvaluasiActivity::class.java))
             }

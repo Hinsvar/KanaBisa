@@ -72,8 +72,6 @@ class HurufActivity: AppCompatActivity() {
                 R.id.optionBeranda -> startActivity(Intent(this@HurufActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@HurufActivity,PengantarActivity::class.java))
                 R.id.optionDaftar -> startActivity(Intent(this@HurufActivity,BunyiActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@HurufActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@HurufActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@HurufActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@HurufActivity,BerandaEvaluasiActivity::class.java))
             }

@@ -53,8 +53,6 @@ class KompetensiActivity: AppCompatActivity() {
                 R.id.optionBeranda -> startActivity(Intent(this@KompetensiActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@KompetensiActivity,PengantarActivity::class.java))
                 R.id.optionDaftar -> startActivity(Intent(this@KompetensiActivity,BunyiActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@KompetensiActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@KompetensiActivity,KatakanaActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@KompetensiActivity,BerandaEvaluasiActivity::class.java))
             }
 

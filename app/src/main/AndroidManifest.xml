@@ -37,14 +37,6 @@
                   android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".HiraganaActivity"
-                  android:screenOrientation="portrait">
-        </activity>
-
-        <activity android:name=".KatakanaActivity"
-                  android:screenOrientation="portrait">
-        </activity>
-
         <activity android:name=".KarakterActivity"
                   android:screenOrientation="portrait">
         </activity>

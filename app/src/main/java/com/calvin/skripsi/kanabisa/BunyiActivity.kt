@@ -48,8 +48,6 @@ class BunyiActivity: AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.optionBeranda -> startActivity(Intent(this@BunyiActivity,BerandaActivity::class.java))
                 R.id.optionPengantar -> startActivity(Intent(this@BunyiActivity,PengantarActivity::class.java))
-                R.id.optionHiragana -> startActivity(Intent(this@BunyiActivity,HiraganaActivity::class.java))
-                R.id.optionKatakana -> startActivity(Intent(this@BunyiActivity,KatakanaActivity::class.java))
                 R.id.optionKompetensi -> startActivity(Intent(this@BunyiActivity,KompetensiActivity::class.java))
                 R.id.optionEvaluasi -> startActivity(Intent(this@BunyiActivity,BerandaEvaluasiActivity::class.java))
             }
